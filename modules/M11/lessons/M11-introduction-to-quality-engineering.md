@@ -2,23 +2,23 @@
 
 ## Introduction
 
-#### Quality
+### Quality
 
 What is Quality? How do you define Quality? Can you measure Quality? Who defines Quality?
 - Please watch [this video](https://www.youtube.com/watch?v=BoGtW-f7HjU) to get one perspective.
 - Quality software is software which meets all the requirements of the customer.
 
-#### Customers
+### Customers
 
 As a Quality Assurance analyst, who is your customer? Is it the product owner or the project manager? Is your customer the business analyst who wrote the requirement documents? Is your customer the software architect who designed the entire system? How about the developer who wrote the majority of the code that you are testing, are they your customer? The answer is obviously all of the above. As a Quality Assurance analyst, it is your job to ensure a quality product has been produced. And we know now how to define quality: it is software which meets all the requirements of the customer. But if everyone is our customer, how can we decide what needs to be tested to ensure we have a quality product?
 
-#### Requirements
+### Requirements
 
 When it comes to testing software, a great place to start is with the documented requirements. Documented requirements can be created by product owners, business analysts (who work for the product owner), subject matter experts, architects, engineering managers, and operations teams. Each of these people are considered "stake holders" and will have some say in how the system is developed.  
 
 Product owners and business analysts create requirements based on their understanding of the end-users (customers) needs. Product owners study customer behavior and make product decisions that they think is in the best interest of the customer, and ultimately in the best interest of "the business".  Architects ensure that organizational architectural guidelines are being followed by each engineering team. Operation teams may require the engineering teams create Java Web Applications that can be deployed in a standard Java Application Server, or that all applications must be "dockerized" for container based deployments.
 
-##### Functional Requirements
+#### Functional Requirements
 
 [Functional requirements](https://en.wikipedia.org/wiki/Functional_requirement) are requirements which be easily verified by using the product.    
 - When the user tabs off the email field, validation is performed to verify the email field is populated with a value that appears to be a valid email address
@@ -30,7 +30,7 @@ Not all functional requirements necessarily need to be documented. Some of them 
 - All words should be spelled correctly
 - Font sizes should scale appropriately if the user uses the zoom functionality in their browser.
 
-##### Non-Functional Requirements
+#### Non-Functional Requirements
 
 Non-functional requirements are requirements which cannot be verified by simple testing the software, but may have to be verified by other means. 
 - Product must be a Java Web Application deployed in a standard Application Server
@@ -166,3 +166,7 @@ Knight Capital Group loses $440,000,000 as a result of software defect
 
 Ariane flight V88 Launch Failure
 - [The Worst Computer Bugs in History: The Ariane 5 Disaster](https://www.bugsnag.com/blog/bug-day-ariane-5-disaster)
+
+## Exercises
+
+Please answer the questions in [M11-exercises-introduction-to-quality-engineering.md](../exercises/M11-exercise-introduction-to-quality-engineering.md)

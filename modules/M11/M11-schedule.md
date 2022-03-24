@@ -9,6 +9,7 @@
 - [Defects](./lessons/M11-defects.md)  
 
 ### Exercises
+- [Introduction Exercises](./exercises/M11-exercise-introduction-to-quality-engineering.md)
 - [Manual Test Cases](./exercises/M11-exercise-manual-test-cases.md)
 - [Defects](./exercises/M11-exercise-defects.md)
  
