@@ -12,8 +12,6 @@
  - [Explore common attack vectors](./exercises/M11-exercise-common-attack-vectors.md)
  - [Implement user authentication using OpenID Connect (OIDC)](./exercises/M11-exercise-openid-connect.md)
 
-### Exercises
-
 ## SDET Day 1 – Quality Management Overview
 
 ### Lessons  
