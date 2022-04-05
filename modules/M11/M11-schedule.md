@@ -1,6 +1,18 @@
 # Schedule
 
-## Day 1 – Quality Management Overview
+## Security
+
+### Lessons
+- [Application Security](./lessons/M11-application-security.md)
+- [Security for Developers](./lessons/M11-security-for-developers.md)
+- [Federated Identity](./lessons/M11-federated-identity.md)
+- [OAuth 2.0 Authorization Code Flow](./lessons/M11-oauth.md)
+
+### Exercises
+ - [Explore common attack vectors](./exercises/M11-exercise-common-attack-vectors.md)
+ - [Implement user authentication using OpenID Connect (OIDC)](./exercises/M11-exercise-openid-connect.md)
+
+## SDET Day 1 – Quality Management Overview
 
 ### Lessons  
 - [Introduction to Quality Engineering](./lessons/M11-introduction-to-quality-engineering.md)  
@@ -9,10 +21,11 @@
 - [Defects](./lessons/M11-defects.md)  
 
 ### Exercises
+- [Introduction Exercises](./exercises/M11-exercise-introduction-to-quality-engineering.md)
 - [Manual Test Cases](./exercises/M11-exercise-manual-test-cases.md)
 - [Defects](./exercises/M11-exercise-defects.md)
  
-## Day 2 – Functional Test Automation
+## SDET Day 2 – Functional Test Automation
 
 ### Lessons
 - [Introduction to Automated Testing](./lessons/M11-introduction-to-automated-testing.md)
@@ -22,7 +35,7 @@
 ### Exercises
 - [Automated Testign with Selenium](./exercises/M11-exercise-automated-testing.md)
 
-## Day 3 – Performance Test Automation
+## SDET Day 3 – Performance Test Automation
 
 ### Lessons
 - [Introduction to Performance Testing](./lessons/M11-introduction-to-performance-testing.md)
