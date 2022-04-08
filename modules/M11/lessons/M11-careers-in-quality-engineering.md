@@ -15,17 +15,17 @@ People who work in careers in Quality Assurance have salaries similar to softwar
 QA Automation Engineer
 https://www.glassdoor.com/Salaries/minneapolis-qa-automation-engineer-salary-SRCH_IL.0,11_IM567_KO12,34.htm?clickSource=searchBtn
 $111,516
-![QA Automation Engineer](/assets/qa_automation_engineer.png)
+![QA Automation Engineer](../assets/qa_automation_engineer.png)
 
 Performance Testing Engineer
 https://www.glassdoor.com/Salaries/minneapolis-performance-testing-engineer-salary-SRCH_IL.0,11_IM567_KO12,40.htm?clickSource=searchBtn
 $113,740
-![Performance Testing Engineer](/assets/performance_testing_engineer.png)
+![Performance Testing Engineer](../assets/performance_testing_engineer.png)
 
 Java Developer
 https://www.glassdoor.com/Salaries/minneapolis-java-developer-salary-SRCH_IL.0,11_IC1142551_KO12,26.htm
 $117,479
-![Java Developer](/assets/java_developer.png)
+![Java Developer](../assets/java_developer.png)
 
 ## Quality Careers / Titles
 
