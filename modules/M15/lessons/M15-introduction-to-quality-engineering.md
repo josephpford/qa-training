@@ -129,4 +129,4 @@ Ariane flight V88 Launch Failure
 
 ## Exercises
 
-Please answer the questions in [M11-exercises-introduction-to-quality-engineering.md](../exercises/M11-exercise-introduction-to-quality-engineering.md)
+Please answer the questions in [M15-exercises-introduction-to-quality-engineering.md](../exercises/M15-exercise-introduction-to-quality-engineering.md)

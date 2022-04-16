@@ -62,4 +62,4 @@ Some Teams opt to not allow any code to be released when there are known defects
 ## Exercises
 
 Complete the following exercises
-- [Defects](../exercises/M11-exercise-defects.md)
+- [Defects](../exercises/M15-exercise-defects.md)

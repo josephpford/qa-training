@@ -52,4 +52,4 @@ Test Runs are also a way to capture the current state of the test case when the 
 ## Exercises
 
 Complete the following exercises
-- [Manual Test Cases](../exercises/M11-exercise-manual-test-cases.md)
+- [Manual Test Cases](../exercises/M15-exercise-manual-test-cases.md)
