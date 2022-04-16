@@ -1,4 +1,17 @@
-## Defects
+# Lesson: Defects
+
+## Introduction
+
+Lorem ipsum
+
+## Learning Outcomes
+
+When you've finished this lesson and its exercises, you should be able to:
+* Lorem ipsum
+* Lorem ipsum
+* Lorem ipsum
+
+## title???
 
 Defects (AKA Defect Reports, Bugs, Bug Reports) are opened whenever a test case fails or when ad-hoc testing is performed and an undesirable or questionable application behaviour is observed. Usually teams allow anyone to open a defect, but it is typically Testers, Developers, and Business Analysts/System Analysts that open defects. Defect Tracking tools are almost always used, and most of the time these defect tracking tools are tightly integrated with the other project tracking tools used, such as requirement documentation, task or "story" cards, etc.
 
@@ -63,3 +76,7 @@ Some Teams opt to not allow any code to be released when there are known defects
 
 Complete the following exercises
 - [Defects](../exercises/M15-exercise-defects.md)
+
+## Summary
+
+Lorem ipsum

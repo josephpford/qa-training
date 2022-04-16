@@ -1,5 +1,16 @@
 # Lesson: Manual Testing
 
+## Introduction
+
+Lorem ipsum
+
+## Learning Outcomes
+
+When you've finished this lesson and its exercises, you should be able to:
+* Lorem ipsum
+* Lorem ipsum
+* Lorem ipsum
+
 ## Test Plan
 
 Test Plans are high level documents which explain tests that will be performed, roles and responsibilities, dates,high-level test scenarios, etc. They are very important in Waterfall projects. They are not used much anymore in Agile projects.
@@ -53,3 +64,7 @@ Test Runs are also a way to capture the current state of the test case when the 
 
 Complete the following exercises
 - [Manual Test Cases](../exercises/M15-exercise-manual-test-cases.md)
+
+## Summary
+
+Lorem ipsum

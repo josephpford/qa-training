@@ -1,5 +1,16 @@
 # Lesson: Introduction to Quality Engineering
 
+## Introduction
+
+Lorem ipsum
+
+## Learning Outcomes
+
+When you've finished this lesson and its exercises, you should be able to:
+* Lorem ipsum
+* Lorem ipsum
+* Lorem ipsum
+
 ### Quality Assurance vs Quality Management vs Quality Engineering
 
 Quality Assurance is the practice of testing software against documented requirements. It is the process of using a product and checking to see if it works as expected according to the documented requirements. It is like a soccer goalie making a great catch in order to prevent the other team from scoring a goal.  Quality Assurance is testing. Some Quality Assurance concepts that we will dive into more include
@@ -130,3 +141,7 @@ Ariane flight V88 Launch Failure
 ## Exercises
 
 Please answer the questions in [M15-exercises-introduction-to-quality-engineering.md](../exercises/M15-exercise-introduction-to-quality-engineering.md)
+
+## Summary
+
+Lorem ipsum
