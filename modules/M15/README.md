@@ -32,7 +32,7 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 
 ### Exercises
 - [Explore common attack vectors](./exercises/M15-exercise-common-attack-vectors.md)
-- [Implement user authentication using OpenID Connect (OIDC)](./exercises/M15-exercise-openid-connect.md)
+- [Implement User Authentication Using OpenID Connect (OIDC)](./exercises/M15-exercise-openid-connect.md)
 
 ## Day 2 - Quality Management Overview
 
