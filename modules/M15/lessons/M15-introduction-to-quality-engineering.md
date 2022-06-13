@@ -2,14 +2,14 @@
 
 ## Introduction
 
-Lorem ipsum
+Quality Assurance is a vast domain. In this introduction, we will introduce high level concepts used within the QA and software enginnering industry. 
 
 ## Learning Outcomes
 
 When you've finished this lesson and its exercises, you should be able to:
-* Lorem ipsum
-* Lorem ipsum
-* Lorem ipsum
+* Articulate the differences between Quality Assurance, Quality Management, Quality Engineering
+* Understand different test types (System Testing, Integration Testing, etc.)
+* Understand how testing fits into the software development lifecycle in both Agile and Waterfall projects.
 
 ### Quality Assurance vs Quality Management vs Quality Engineering
 
@@ -129,10 +129,12 @@ The way testers communicate the presence of defects is by opening a defect repor
 ### Notable Software Defects
 "Green Card" Lottery results voided
 - [Second green card lottery held after first results voided](https://www.washingtonpost.com/local/second-green-card-lottery-to-be-held-today-after-first-results-voided/2011/07/11/gIQAdX3yFI_story.html)
+
 - [Deputy Assistant Secretary Donahue Says 2012 Diversity Immigrant Visa Process Are Void](https://www.youtube.com/watch?v=E2-WZ8xUtXI)
 
 Knight Capital Group loses $440,000,000 as a result of software defect
 - [The Rise and Fall of Knight Capital — Buy High, Sell Low. Rinse and Repeat.](https://medium.com/dataseries/the-rise-and-fall-of-knight-capital-buy-high-sell-low-rinse-and-repeat-ae17fae780f6)
+
 - [Case Study 4: The $440 Million Software Error at Knight Capital](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html)
 
 Ariane flight V88 Launch Failure
@@ -144,4 +146,4 @@ Please answer the questions in [M15-exercises-introduction-to-quality-engineerin
 
 ## Summary
 
-Lorem ipsum
+Quality Assurance is testing, Quality Management is recommending practices to improve quality, and Quality Engineering is the evolving practice of writing high quality software where everyone gets involved. Software testing can take many forms and can be very high-level or extremely technical. Software testing focuses on functionality, useability and performance to ensure high quality software for our end users.

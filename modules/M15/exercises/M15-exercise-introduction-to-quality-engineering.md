@@ -8,7 +8,7 @@ A:
 Q: In your own words, what is Testing?  
 A: 
 
-Q: In your own words, what is a Defect?  What are the components of a Defect Report?
+Q: In your own words, what is a Defect?  What are the components of a Defect Report?  
 A: 
 
 Q: How does Quality Assurance differ from Quality Management?  

@@ -2,14 +2,13 @@
 
 ## Introduction
 
-Lorem ipsum
+Quality Engineering is a vast domain, and there are numerous careers in Quality Engineering. In this lesson we explore some of the more common roles you may perform as a Quality Engineering professional.
 
 ## Learning Outcomes
 
 When you've finished this lesson you should be able to 
 * Articulate how a Quality Engineer fits into a typical software development team
 * Understand three technical career paths in Quality Engineering
-* Understand three management career paths in Quality Engineering
 
 ## Consistently Ranks as #1 or #2 “Happiest Job”
 
@@ -21,7 +20,7 @@ Read the following articles to see how a career in QA may be right for you.
 
 ## Quality Careers / Titles
 
-Quality Engineering is a vast domain, and there are numerous careers in Quality Engineering. Below are some of the more common roles.
+While this list is definitely not exhaustive, below are some of the more common roles in the industry.
 
 ### Quality Assurance Analyst / Tester
 
@@ -41,4 +40,4 @@ Performance Engineers create software or scripts which emulate tens/hundreds/tho
 
 ## Summary
 
-Lorem ipsum
+There are many different roles in Quality Engineering. Some roles are more technical than others and require programming or scripting skills. Quality Assurance Analysts (or Testers) generally perform manual testing to look for defects. Automation engineers create automation scripts which automate test case execution. Performance Engineers focus on various aspects of system performance to ensure the system works under various loads and scenarios.
