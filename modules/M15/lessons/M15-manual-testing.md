@@ -66,11 +66,6 @@ A Test Run is the execution of a certain version of test cases on a certain vers
 
 Test Runs are also a way to capture the current state of the test case when the test case was executed.  For example, suppose you have a test case called "Update User Profile" that you execute as part of your regression testing each release. In a future release, the Update User Profile functionality actually changed so that you had to update your test case. The historical Test Runs that contain that test case should NOT get updated when you update the test case. The updated test case should only apply to new test runs.  If a compliance audit is performed, the exact steps that were taken when the test case was executed needs to be identified, not the current version of the test case.
 
-## Exercises
-
-Complete the following exercises
-- [Manual Test Cases](../exercises/M15-exercise-manual-test-cases.md)
-
 ## Summary
 
 Test Plans describe the testing techniques that will be used during the various phases of the project and who will be performing that testing. Test Cases describe actual steps and expected results that will be taken for testing the system. There are various ways to create Test Cases from requirements, and Pairwise Testing can help reduce the number of test cases needed to test all requirements. Traceability matrices help map test cases back to requirements. Test Cases can be grouped together into various Test Suites and Test Suites are executed multiple times in Test Runs.
