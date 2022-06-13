@@ -31,6 +31,7 @@ Here is an example of a Test Case:
 Pre-condition: The database is initialized with 0 solar farm panels
 
 | Step  | Expected Result |
+| ------------------------------ | ------------------------------ |
 | 1: Log into Solar Farm Admin UI | User is successfully logged in |
 | 2: Select Delete from the Main Menu | The Delete Menu is displayed. There are text entry fields for Section Name, Row, Column and a Delete button. |
 | 3: Enter the following into the delete criteria: Section Name: "XYZ" Row: 1 Column: 1 | The UI allows the data to be entered |  
