@@ -27,7 +27,7 @@ Quality Engineering is a vast domain, and there are numerous careers in Quality 
 
 People in these positions spend their time creating and (manually) executing [Test Plans](https://en.wikipedia.org/wiki/Test_plan) and [Test Cases](https://en.wikipedia.org/wiki/Test_case). Test Plans are high-level documents which spell out the types of testing that will take place. Test Cases are step-by-step instructions of what to do once testing starts.  Test Plans and Test Cases can be mapped back to requirements with [requirements traceability matrices](https://www.softwaretestinghelp.com/requirements-traceability-matrix/).
 
-The step-by-step instructions are important not just to ensure that the execution is done correctly, but after a [Test Run](https://www.testmonitor.com/blog/test-case-test-suite-test-run-whats-the-difference) is executed, it can become an important piece of compliance for [SOX](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act) or [FDA](https://www.fda.gov/files/medical%20devices/published/General-Principles-of-Software-Validation---Final-Guidance-for-Industry-and-FDA-Staff.pdf) regulated environments. Quality Assurance Analysts create defect reports, and may hold Defect Triage meetings to prioritize defects and  [determine root case](https://en.wikipedia.org/wiki/Root_cause_analysis).
+The step-by-step instructions are important not just to ensure that the execution is done correctly, but after a [Test Run](https://www.testmonitor.com/blog/test-case-test-suite-test-run-whats-the-difference) is executed, it can become an important piece of compliance for [SOX](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act) or [FDA](https://www.fda.gov/files/medical%20devices/published/General-Principles-of-Software-Validation---Final-Guidance-for-Industry-and-FDA-Staff.pdf) regulated environments. Quality Assurance Analysts create defect reports, and may hold Defect Triage meetings to prioritize defects and [determine root case](https://en.wikipedia.org/wiki/Root_cause_analysis).
 
 ### Automation Engineer / Automation Architect
 
@@ -37,9 +37,7 @@ Automation Engineers use many tools to write the automation. There are many comm
 
 ### Performance Testing Engineer
 
-Performance Engineers create software or scripts which emulate tens/hundreds/thousands/etc. of user or system interactions per second. Generally a small subset of the functional test cases are identified as good candidates for scripting. Then the performance engineer will write the code necessary to simulate a user performing that test case, and most likely parameterize the data inputs to vary the mock user behaviour. The performance test scripts will be executed in various ways to test the system for stability or acceptable performance across various user loads. Again, there are many commercial and open source tools available.
-* https://www.guru99.com/performance-testing-tools.html
-* https://www.google.com/search?q=performance+testing+tool
+Performance Engineers create software or scripts which emulate tens/hundreds/thousands/etc. of user or system interactions per second. Generally a small subset of the functional test cases are identified as good candidates for scripting. Then the performance engineer will write the code necessary to simulate a user performing that test case, and most likely parameterize the data inputs to vary the mock user behavior. The performance test scripts will be executed in various ways to test the system for stability or acceptable performance across various user loads. Again, there are many commercial and open source tools available. 
 
 ## Summary
 
