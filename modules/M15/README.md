@@ -49,12 +49,12 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 ## Day 3 - Functional Test Automation
 
 ### Lessons
-- [Introduction to Automated Testing](./lessons/M15-introduction-to-automated-testing.md)
+- [Introduction to Test Automation](./lessons/M15-introduction-to-test-automation.md)
 - [Testing Frameworks](./lessons/M15-automated-testing-frameworks.md)
 - [Introduction to Selenium](./lessons/M15-introduction-to-selenium.md)
 
 ### Exercises
-- [Automated Testign with Selenium](./exercises/M15-exercise-automated-testing.md)
+- [Automated Testing with Selenium](./exercises/M15-exercise-automated-testing.md)
 
 ## Day 4 - Performance Test Automation
 
