@@ -5,10 +5,9 @@ Test Automation is the use of software to verify the functionality of other soft
 ## Learning Outcomes
 
 When you've finished this lesson and its exercises, you should be able to:
-* Understand the differences between these three types of automation: Browser Automation vs Desktop Application Automation vs API Testing 
-* Explain key differences for Frontend vs Backend automation
-* Identify commercial and open source tools available for both frontend and backend test automation
-* Articulate 3 different high-level Automated Testing Methodologies
+* Understand what Automated Testing is at a high level
+* Understand that there are many tools available to help with Test Automation
+* Understand 3 different approaches for Test Automation 
   * Record and Playback
   * Keyword Driven
   * Data Driven
@@ -47,8 +46,11 @@ There are also many open source Test Automation tool offerings. Many of these op
 - [SikuliX](http://sikulix.com/)
 - [JUnit](https://junit.org/)/[NUnit](https://nunit.org/)
 - [TestNG](https://testng.org/doc/)
+- [Cucumber](https://cucumber.io/docs/guides/overview/)
+- [Geb](https://www.gebish.org/)
+- [Spock](https://spockframework.org/)
 
-## Software Test Automation Methodologies
+## Software Test Automation Approaches
 
 ### Record and Playback
 
@@ -72,7 +74,7 @@ As you can imagine, Record and Playback can quickly become unwieldy as the Test 
 
 ### Keyword Driven
 
-The next methodology we will explore is Keyword Driven. For Keyword Driven automation, you create a collection of "keywords" each with 0-many parameters. Each keyword will represent a concrete action or a combination of concrete actions possibly including verification steps. These keywords will be stored in a central location, and all tests will reference these keywords. 
+The next approach we will explore is Keyword Driven. For Keyword Driven automation, you create a collection of "keywords" each with 0-many parameters. Each keyword will represent a concrete action or a combination of concrete actions possibly including verification steps. These keywords will be stored in a central location, and all tests will reference these keywords. 
 
 ```
 enterUsername("admin");
@@ -194,4 +196,4 @@ Test Step Detail Table
 
 ## Summary
 
-Software Automation is a rapidly growing and evolving field. There are many commercial and open source products to help create software test automation. Using good software development practices are important for test automation, because test automation code is software itself. 
+Software Automation is a rapidly growing and evolving field. There are many commercial and open source products to help create software test automation. Using good software development practices are important for test automation, because test automation code is software itself. There are many different approaches for writing Software Test Automation, and the techniques and tools used are evolving rapidly as more and more organizations adopt Quality Engineering practices. 
