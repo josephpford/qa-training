@@ -31,6 +31,7 @@ Here is an example of a Test Case:
 Pre-condition: The database is initialized with 0 solar farm panels
 
 | Step  | Expected Result |
+| ------------------------------ | ------------------------------ |
 | 1: Log into Solar Farm Admin UI | User is successfully logged in |
 | 2: Select Delete from the Main Menu | The Delete Menu is displayed. There are text entry fields for Section Name, Row, Column and a Delete button. |
 | 3: Enter the following into the delete criteria: Section Name: "XYZ" Row: 1 Column: 1 | The UI allows the data to be entered |  
@@ -64,11 +65,6 @@ You could create a Smoke Test Suite which includes 10 high-level scenarios that 
 A Test Run is the execution of a certain version of test cases on a certain version of the code, at a certain date/time, in a certain environment. Suppose for example that you have identified 1000 test cases that you want to execute as part of your regression testing for the release coming up. When the software is initially deployed to the test environment, you are able to get through 250 of those test cases until you encountered a catastrophic bug that prevents you from testing any further. At this point you stop testing and wait for the development team to fix the bug, and deploy the fix to the test environment. Once the code is re-deployed, do you pick up where you left off or do you start fresh?  Did your Test Run end and a new Test Run begins? That kind of depends on the environment you are working in. If you are in an FDA or SOX regulated environment, the previous Test Run is complete, and a new Test Run begins. Some institutions may have compliance reporting requirements that require a complete Test Run is executed entirely without any failing tests before that code is deployed to end users. If any new code deployment happens, the Test Run ends and a new Test Run begins. 
 
 Test Runs are also a way to capture the current state of the test case when the test case was executed.  For example, suppose you have a test case called "Update User Profile" that you execute as part of your regression testing each release. In a future release, the Update User Profile functionality actually changed so that you had to update your test case. The historical Test Runs that contain that test case should NOT get updated when you update the test case. The updated test case should only apply to new test runs.  If a compliance audit is performed, the exact steps that were taken when the test case was executed needs to be identified, not the current version of the test case.
-
-## Exercises
-
-Complete the following exercises
-- [Manual Test Cases](../exercises/M15-exercise-manual-test-cases.md)
 
 ## Summary
 

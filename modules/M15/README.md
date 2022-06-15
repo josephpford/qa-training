@@ -44,8 +44,7 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 
 ### Exercises
 - [Introduction Exercises](./exercises/M15-exercise-introduction-to-quality-engineering.md)
-- [Manual Test Cases](./exercises/M15-exercise-manual-test-cases.md)
-- [Defects](./exercises/M15-exercise-defects.md)
+- [Manual Testing](./exercises/M15-exercise-manual-testing.md)
 
 ## Day 3 - Functional Test Automation
 

@@ -1,3 +1,0 @@
-# Exercise: Defects
-
-* Lorem ipsum
