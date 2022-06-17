@@ -128,12 +128,14 @@ If the "Are you sure?" dialog is added to the application, only the "addAgent" k
 Frequently multiple iterations of identical steps are performed for testing. For example, our Add Agent test could be repeated multiple times with different usernames, different dates, and different verification messages. We can extract out the data into parameters and create a single method that is called multiple times for each test. 
 
 ```
-runAddAgentSuccessTest("Bob", "Johnson", "01/01/1970", "Agent Bob Johnson added successfully.");
-runAddAgentSuccessTest("Bob", "", "01/01/1970", "Last name is required.");
-runAddAgentSuccessTest("", "Johnson", "01/01/1970", "First name is required.");
-runAddAgentSuccessTest("Bob", "Johnson", "", "DOB is required.");
-runAddAgentSuccessTest("Bob", "Johnson", "01/01/2022", "Agent must be at least 18 years old.");
+runAddAgentTest("Bob", "Johnson", "01/01/1970", "Agent Bob Johnson added successfully.");
+runAddAgentTest("Bob", "", "01/01/1970", "Last name is required.");
+runAddAgentTest("", "Johnson", "01/01/1970", "First name is required.");
+runAddAgentTest("Bob", "Johnson", "", "DOB is required.");
+runAddAgentTest("Bob", "Johnson", "01/01/2022", "Agent must be at least 18 years old.");
 ```
+
+Note that there will be completely different groups of test cases that don't follow the same steps as runAddAgentTest (e.g. runDeleteAgentTest, runEditAgentTest, etc). Each of these groups of test cases can be automated as one test case (as a Java method) that takes different input and expected results.  
 
 #### Keyword Driven (Externalized Test Data)
 
@@ -156,13 +158,13 @@ for (String[] testData : allTests) {
 
 ### Data Driven
 
-With Keyword Driven tests, the test execution flow is dictated by the code. If your application always flows from page 1 to page X sequentially, then there is no need for Data Driven tests. But if your application allows the users to make decisions as to where they go next, you may want to consider Data Driven tests.
+With Keyword Driven tests, the test execution flow is dictated by the code. In the above example, there is a runAddAgentTest, but also a runEditAgentTest and a runDeleteAgentTest. Every "flow" needs to be written in code separately. With Data Driven tests, the "flow" is moved out of the code and into the external data file. 
 
 Suppose the next iteration of Field Agent allows users create Agencies and also associate Agents to Agencies. The Test Team may want to execute these two similar but different tests:
 - Test 1: Create Agent, then Agency, then link
 - Test 2: Create Agency, then Agent, then link
 
-With Keyword Driven tests, this would require you would create a keyword for createAgent, and createAgency and linkAgent. But you would need to have two separate test methods, you couldn't simply have 1 test method for both of these tests because the test steps are different. With Data Driven testing, you introduce flow control by having each test have their own separate steps in the data. Your Automation code is no longer an "Automated Test Case" but a Test Driver or Test Executor. The Test Cases are contained within the data itself. Below is a simple example of how this could work. There are much more elaborate designs which allow for common actions to be grouped together.
+With Keyword Driven tests, this would require you to create a keyword for createAgent, and createAgency and linkAgent. But you would need to have two separate test methods, you couldn't simply have 1 test method for both of these tests because the test steps are different. With Data Driven testing, you introduce flow control by having each test have their own separate steps in the data. Your Automation code is no longer an "Automated Test Case" but a Test Driver or Test Executor. The Test Cases are contained within the data itself. Below is a simple example of how this could work. There are much more elaborate designs which allow for common actions to be grouped together.
 
 Test Table
 
