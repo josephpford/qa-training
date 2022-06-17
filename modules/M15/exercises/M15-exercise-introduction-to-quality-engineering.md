@@ -29,16 +29,10 @@ A:
 Q: Why is automation so important on an Agile project?  
 A: 
 
-Q: What are some problems that Test Data Management seeks to alleviate?  
-A: 
-
 Q: Have you ever encountered a defect "in the wild"? How did it make you feel about the company or the product you were using?  
 A: 
 
 Q: Why is regression testing important?  
-A: 
-
-Q: How would you decide which test cases are good candidates for automating? Are there any test cases that are not good for automating?  
 A: 
 
 Q: If a defect doesn't cause any customer problems at all, is it a defect? (Does a falling tree make a sound if no one hears it?)  

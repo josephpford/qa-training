@@ -4,10 +4,10 @@ Test Automation is the use of software to verify the functionality of other soft
 
 ## Learning Outcomes
 
-When you've finished this lesson and its exercises, you should be able to:
+When you've finished this lesson and its exercises, you should:
 * Understand what Automated Testing is at a high level
-* Describe some difference between Frontend (Browser / Desktop) and Backend (API) testing
-* Understand that wide selection of tools available to help with Test Automation
+* Be able to describe some difference between Frontend (Browser / Desktop) and Backend (API) testing
+* Have an awareness about the wide selection of tools available to help with Test Automation
 * Understand 3 different methodologies for Frontend Test Automation 
   * Record and Playback
   * Keyword Driven
