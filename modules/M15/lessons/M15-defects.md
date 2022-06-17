@@ -74,7 +74,7 @@ Some Teams decide to not allow any code to be released when there are known defe
 
 ## Summary
 
-Defects are deviations to 
+Defects are deviations to expected results. Defect Reports (aka Defects, Bugs) are opened in Defect Tracking Tools to help track the resolution of these defects. Some teams choose to fix all defects before releasing code to production, some teams have defect triage meetings where they decide which defects are worth fixing and which defects can be ignored/delayed.
 
 This concludes the introduction to Manual Testing. Manual Testing is comprised of Test Planning, Test Case Creation and Execution and Defects. 
 

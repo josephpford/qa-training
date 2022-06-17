@@ -140,10 +140,6 @@ Knight Capital Group loses $440,000,000 as a result of software defect
 Ariane flight V88 Launch Failure
 - [The Worst Computer Bugs in History: The Ariane 5 Disaster](https://www.bugsnag.com/blog/bug-day-ariane-5-disaster)
 
-## Exercises
-
-Please answer the questions in [M15-exercises-introduction-to-quality-engineering.md](../exercises/M15-exercise-introduction-to-quality-engineering.md)
-
 ## Summary
 
 Quality Assurance is testing, Quality Management is recommending practices to improve quality, and Quality Engineering is the evolving practice of writing high quality software where everyone gets involved. Software testing can take many forms and can be very high-level or extremely technical. Software testing focuses on functionality, useability and performance to ensure high quality software for our end users.
