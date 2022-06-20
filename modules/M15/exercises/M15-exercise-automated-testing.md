@@ -28,20 +28,20 @@ When you've finished this exercise you should be able to write basic browser-bas
 
 ![Selenium IDE](../assets/selenium-ide.png)
 
-1. Give the project any name, and set the base URL to http://localhost:3000 and click Start Recording.
-1. A new browser window should open and Field Agents should be displayed. 
-1. Add a new agent
+3. Give the project any name, and set the base URL to http://localhost:3000 and click Start Recording.
+4. A new browser window should open and Field Agents should be displayed. 
+5. Add a new agent
  - When adding an agent, make sure to exercise each field, even optional ones, so that Selenium IDE captures information about those fields. 
-1. After adding the agent, 
+6. After adding the agent, 
  - Right click on the new agent's name and select Selenium IDE -> Assert -> Text. 
  - Right click on the new agent's DOB and select Selenium IDE -> Assert -> Text.
 
 ![Selenium IDE - Add Agent](../assets/selenium-ide-add-agent.png)
 
-1. Click the stop button in Selenium IDE and give the test any name
-1. Right Click on the test name and select Export. Choose Java / JUnit and leave all the other options default. Save it anywhere on your computer. 
-1. Create a new blank Java Maven project in IntelliJ in M15/assessment/field-agent-tests
-1. Add the following dependencies in your pom.xml and rebuild the project. 
+7. Click the stop button in Selenium IDE and give the test any name
+8. Right Click on the test name and select Export. Choose Java / JUnit and leave all the other options default. Save it anywhere on your computer. 
+9. Create a new blank Java Maven project in IntelliJ in M15/assessment/field-agent-tests
+10. Add the following dependencies in your pom.xml and rebuild the project. 
 
 ```
     <dependencies>
@@ -62,8 +62,8 @@ When you've finished this exercise you should be able to write basic browser-bas
     </dependencies>
 ```
 
-1. Copy the Record and Playback file from Selenium IDE into the src/test/java folder. (You may place it in a package as well if desired).
-1. The Test Case is written in JUNit 4, but we're using JUnit 5. Convert the test to JUnit 5:
+11. Copy the Record and Playback file from Selenium IDE into the src/test/java folder. (You may place it in a package as well if desired).
+12. The Test Case is written in JUNit 4, but we're using JUnit 5. Convert the test to JUnit 5:
  - change any assertThat's into assertTrue
  - change @Before and @After to @BeforeEach and @AfterEach
  - replace all imports with the following:
@@ -86,14 +86,14 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 ```
 
-1. Run the test.
+13. Run the test.
  - What went wrong? The Test can't find Selenium WebDriver. Selenium WebDriver is the executable that allows our Java code to talk to our browser. Instead of downloading the driver manually, let's let WebDriverMananger do it for us.
 
 ```
 java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html
 ```
 
-1. Add to your pom.xml:
+14. Add to your pom.xml:
 
 ```
         <dependency>
@@ -103,14 +103,14 @@ java.lang.IllegalStateException: The path to the driver executable The path to t
         </dependency>
 ```
 
-1. Add to your imports:
+15. Add to your imports:
 
 ```
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.BeforeAll;
 ```
 
-1. Add to your test class:
+16. Add to your test class:
 ```
   @BeforeAll
   static void beforeAll() {
@@ -118,11 +118,8 @@ import org.junit.jupiter.api.BeforeAll;
   }
 ```
 
-1. Run the test again. It should pass. If it does not pass, try re-recording it. Look at the XPath expressions that are identifying elements. Inspect the code that was recorded by your script. You can try to clean up the code that was recorded by Selenium IDE to the minimum necessary to accomplish the test case. You will notice that Selenium IDE records every click, whether that click is necessary for your test case or not.
+17. Run the test again. It should pass. If it does not pass, try re-recording it. Look at the By.xxxSelector expressions that are identifying elements. Inspect the code that was recorded by your script. You can try to clean up the code that was recorded by Selenium IDE to the minimum necessary to accomplish the test case. You will notice that Selenium IDE records every click, whether that click is necessary for your test case or not.
 
 ## Summary
 
-Lorem ipsum
-
-* https://www.guru99.com/automated-testing-tools.html
-* https://www.google.com/search?q=software+test+automation
+Automating WebBrowsers with Selenium IDE involves interacting with a web-page. Every action taken by the user will be recorded in Selenium IDE. You can add assertions to Selenium IDE test cases. You can export the Selenium IDE test case into the language of your choice. Selenium IDE is not great for long term usage, but is a fantastic way to get started with test case automation.

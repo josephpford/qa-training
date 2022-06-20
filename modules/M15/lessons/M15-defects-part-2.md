@@ -81,4 +81,4 @@ This concludes the introduction to Manual Testing. Manual Testing is comprised o
 ## Manual Testing and Defects Exercises
 
 Please complete the following exercises
-- [Manual Testing](../exercises/M15-exercise-manual-testing.md)
+[Manual Testing and Defect Exercise](../exercises/M15-exercise-manual-testing.md)

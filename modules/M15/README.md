@@ -34,23 +34,29 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 - [Explore common attack vectors](./exercises/M15-exercise-common-attack-vectors.md)
 - [Implement User Authentication Using OpenID Connect (OIDC)](./exercises/M15-exercise-openid-connect.md)
 
-## Day 2 - Quality Management Overview
+## Day 2 - Quality Engineering Overview
 
-### Lessons
+### Quality Engineering Overview
 - [Introduction to Quality Engineering](./lessons/M15-introduction-to-quality-engineering.md)
+- [Introduction to Defects](./lessons/M15-introduction-to-defects.md)
+- [QA vs QM vs QE](./lessons/M15-qa-qm-qe.md)
+- [Software Development Methodologies](./lessons/M15-software-development-methodologies.md)
+- [Test Strategies and Levels](./lessons/M15-test-strategies-and-levels.md)
 - [Careers in Quality Engineering](./lessons/M15-careers-in-quality-engineering.md)
-- [Manual Test Cases](./lessons/M15-manual-testing.md)
-- [Defects](./lessons/M15-defects.md)
-
-### Exercises
+- [Quality Engineering Summary](./lessons/M15-qe-overview-summary.md)
 - [Introduction Exercises](./exercises/M15-exercise-introduction-to-quality-engineering.md)
-- [Manual Testing](./exercises/M15-exercise-manual-testing.md)
+
+### Manual Testing and Defects Part 2
+- [Manual Test Cases](./lessons/M15-manual-testing.md)
+- [Defects Part 2](./lessons/M15-defects-part-2.md)
+- [Manual Testing and Defect Exercise](./exercises/M15-exercise-manual-testing.md)
 
 ## Day 3 - Functional Test Automation
 
 ### Lessons
 - [Introduction to Test Automation](./lessons/M15-introduction-to-test-automation.md)
-- [Testing Frameworks](./lessons/M15-automated-testing-frameworks.md)
+- [Testing Automation Tools](./lessons/M15-test-automation-tools.md)
+- [Test Automation Frameworks](./lessons/M15-test-automation-tools.md)
 - [Introduction to Selenium](./lessons/M15-introduction-to-selenium.md)
 
 ### Exercises
