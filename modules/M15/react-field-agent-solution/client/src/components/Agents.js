@@ -277,10 +277,10 @@ function Agents() {
               </tr>
             </thead>
             <tbody>
-              {agents.map(agent => (
-                <tr key={agent.agentId}>
-                  <td>{agent.lastName}, {agent.firstName}</td>
-                  <td>{agent.dob ? agent.dob : 'N/A'}</td>
+              {agents.map((agent, index) => (
+                <tr id={`row-${index}`} key={agent.agentId}>
+                  <td name="name">{agent.lastName}, {agent.firstName}</td>
+                  <td name="dob">{agent.dob ? agent.dob : 'N/A'}</td>
                   <td>
                     <div className="float-right">
                       <button className="btn btn-primary btn-sm" 
