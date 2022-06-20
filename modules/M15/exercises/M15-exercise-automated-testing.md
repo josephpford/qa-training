@@ -118,11 +118,8 @@ import org.junit.jupiter.api.BeforeAll;
   }
 ```
 
-17. Run the test again. It should pass. If it does not pass, try re-recording it. Look at the XPath expressions that are identifying elements. Inspect the code that was recorded by your script. You can try to clean up the code that was recorded by Selenium IDE to the minimum necessary to accomplish the test case. You will notice that Selenium IDE records every click, whether that click is necessary for your test case or not.
+17. Run the test again. It should pass. If it does not pass, try re-recording it. Look at the By.xxxSelector expressions that are identifying elements. Inspect the code that was recorded by your script. You can try to clean up the code that was recorded by Selenium IDE to the minimum necessary to accomplish the test case. You will notice that Selenium IDE records every click, whether that click is necessary for your test case or not.
 
 ## Summary
 
-Lorem ipsum
-
-* https://www.guru99.com/automated-testing-tools.html
-* https://www.google.com/search?q=software+test+automation
+Automating WebBrowsers with Selenium IDE involves interacting with a web-page. Every action taken by the user will be recorded in Selenium IDE. You can add assertions to Selenium IDE test cases. You can export the Selenium IDE test case into the language of your choice. Selenium IDE is not great for long term usage, but is a fantastic way to get started with test case automation.

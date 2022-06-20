@@ -44,3 +44,6 @@ Also read the Dos and Don'ts:
 ## Summary
 
 Selenium is an open source project with many downloadable components that can help automate web browsers. You can choose which components are necessary for your project. Selenium integrates nicely with Java and many other programming languages.
+
+## Next
+[Automated Testing with Selenium](./exercises/M15-exercise-automated-testing.md)

@@ -55,7 +55,8 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 
 ### Lessons
 - [Introduction to Test Automation](./lessons/M15-introduction-to-test-automation.md)
-- [Testing Frameworks](./lessons/M15-automated-testing-frameworks.md)
+- [Testing Automation Tools](./lessons/M15-test-automation-tools.md)
+- [Test Automation Frameworks](./lessons/M15-test-automation-tools.md)
 - [Introduction to Selenium](./lessons/M15-introduction-to-selenium.md)
 
 ### Exercises
