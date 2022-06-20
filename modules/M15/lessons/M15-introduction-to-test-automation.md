@@ -39,4 +39,4 @@ Test Automation is software itself, so it should also be written following [SOLI
 Software Automation is a rapidly growing and evolving field. There are many commercial and open source products to help create software test automation. Using good software development practices are important for test automation, because test automation code is software itself. There are many different approaches for writing Software Test Automation, and the techniques and tools used are evolving rapidly as more and more organizations adopt Quality Engineering practices. 
 
 ## Next
-[Testing Automation Tools](./lessons/M15-test-automation-tools.md)
+[Testing Automation Tools](./M15-test-automation-tools.md)

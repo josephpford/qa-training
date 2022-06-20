@@ -35,4 +35,4 @@ There are also many open source Test Automation tool offerings. Instead of compl
   - Apache JMeter can be used as a load testing tool for analyzing and measuring the performance of a variety of services, with a focus on web applications.
 
 ## Next
-[Introduction to Selenium](./lessons/M15-introduction-to-selenium.md)
+[Introduction to Selenium](./M15-introduction-to-selenium.md)
