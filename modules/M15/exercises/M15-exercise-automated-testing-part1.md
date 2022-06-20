@@ -8,15 +8,19 @@ In this exercise, we will build on the last exercise by automating (some of) the
 
 ## Learning Outcomes
 
-When you've finished this exercise you should be able to write basic browser-based software test automation.
+When you've finished this exercise you should be able to write basic browser-based software test automation. 
  - Part 1: Installation
  - Part 2: Record and Playback
  - Part 3: Keyword Driven - Parameterized
- - Part 4: Keyword Driven - Parameterized w/ External Data File
+
+ ## Stretch Goals
+ If you have more time available, please consider applying some of these principals to your software test automation suite.
+   - [Data Driven Test Automation](https://en.wikipedia.org/wiki/Data-driven_testing)
+   - The [Page Object Model](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/) via Selenium [Loadable Component](https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/LoadableComponent.html)
 
 ## Part 1: Installation
 - Selenium IDE
-  - Selenium IDE is a browser extension for Chrome and Firefox. Follow the [installation instructions](https://www.selenium.dev/selenium-ide/). 
+  - Selenium IDE is a browser extension for Chrome and Firefox. Follow the [installation instructions](https://www.selenium.dev/selenium-ide/) on Selenium's website.
 - Selenium Client and WebDriver Language Bindings
   - These are libraries (JARs) which provide the API for Selenium for Java, C#, Ruby, etc.. You can read the [JavaDocs](https://www.selenium.dev/selenium/docs/api/java/overview-summary.html). We will be installing this using Maven. Nothing to do for now...
 - Selenium WebDriver
