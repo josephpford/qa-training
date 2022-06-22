@@ -66,7 +66,7 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 
 ### Lessons
 - [Introduction to Performance Testing](./lessons/M15-introduction-to-performance-testing.md)
-- [Tools and Technologies Used](./lessons/M15-performance-testing-tools.md)
+- [Performance Testing Tools / Technologies](./lessons/M15-performance-testing-tools.md)
 - [Introduction to Apache JMeter](./lessons/M15-introduction-to-apache-jmeter.md)
 
 ### Exercises

@@ -37,18 +37,12 @@ Test Strategies (AKA Test Methods) can be applied to any Test Level below. At a 
     - Most "Testing" is intentionally well-documented, to provide proof as to what has been verified as working, what has not yet been verified as working, and what has been identified as not working.
     - Exploratory Testing is different from other types of testing in that it really cannot be documented well. The whole purpose of exploratory testing it is to allow the creativity and free thinking of the exploratory tester to find defects. It is difficult to document all the tests that were performed by the tester. However, if any defects were found, the steps to reproduce that defect should be documented as a target for future testing.
   - [Performance Testing](https://en.wikipedia.org/wiki/Software_performance_testing)
-    - Performance Testing is an umbrella term to describe all aspects of testing that include an application's ability to respond in a timely manner under all sorts of load scenarios.
+    - Performance Testing is an umbrella term to describe all aspects of testing that include an application's ability to respond in a timely manner under all sorts of load scenarios. We will dive into Performance Testing in depth on Day 4.
     - Load Testing
-      - Under the expected load, do all users experience acceptable response times?
-      - Ramp up to expected level and then hold
     - Stress Testing
-      - At what point does the system stop performing as expected when the load is larger than expected?
-      - Ramp up slowly beyond expected levels
     - Spike Testing
-      - If an unusually large amount of traffic "spikes" can the system handle it? Can the system scale up to handle the traffic? How quickly does the scale up happen and is that short enough? Does it scale back down after the spike is gone?
-      - Ramp up quickly beyond expected levels, ramp down quickly, etc.
     - Endurance Testing
-      - Similar to load testing, but for a very large amount of time. Some performance bugs only reveal themselves after the application has been "up" for a very large amount of [wall time](https://en.wikipedia.org/wiki/Elapsed_real_time). Other performance bugs reveal themselves only after a certain number of requests have been processed.
+    - Scalability Testing
 
 ## Next:
 [Careers in Quality Engineering](./M15-careers-in-quality-engineering.md)

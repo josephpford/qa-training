@@ -214,7 +214,7 @@ If you look at the "dob" above, you will see Selenium IDE didn't do the best job
 java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html
 ```
  
- The Test can't find Selenium WebDriver. Selenium WebDriver is the executable that allows our Java code to talk to our browser. Instead of downloading the driver manually, let's let WebDriverMananger do it for us.
+ The Test can't find Selenium WebDriver. Selenium WebDriver is the executable that allows Java to interface with the browser. Instead of downloading the driver manually, WebDriverMananger can do it automatically and keep up to date with Chrome.
 
 15. Add to your pom.xml:
 
