@@ -1,12 +1,12 @@
 # Exercise: Manual Test Cases
 
-In this exercise, you will review requirements for the Field Agent UI, then create and execute manual test cases based on the requirements. We will then write up defects for any deviations from the requirements discovered. 
+In this exercise, you will review requirements for the Field Agent UI, then create and execute manual test cases based on the requirements. You will then write up defects for any deviations from the requirements discovered. 
 
 ## Step 1: Review Field Agent UI Requirements
 ### Main UI
 - Displays all agents
 - Each agent should display: Last name, First Name, Birthday, Edit and Delete buttons
-- Agents should be sorted by lastname, then firstname, then birthday
+- Agents should be sorted by last name, then first name, then birthday
 - If birthday is not known, display "unknown"
 
 ### Add/Edit
@@ -33,14 +33,24 @@ In this exercise, you will review requirements for the Field Agent UI, then crea
   - All Pairs / Pairwise Testing
   - Boundary Testing
 
-## Step 3: Execute Manual Test Cases and Open Defect Reports
-- Create a copy of your Excel spreadsheet and name it Field-Agent-Test-Run-01.xlsx This copy will become your first test run.
+## Step 3: Prepare the test environment
+- Download and extract the provided [react-field-agent-solution.zip](../assets/react-field-agent-solution.zip)
+- Open react-field-agent-solution/server/ folder in IntelliJ as a Maven project and run the SpringBootApplication (App)
+  - You probably have to add this to your Run Configuration: `FIELD_AGENT_DB_USERNAME=root; FIELD_AGENT_DB_PASSWORD=passwd`
+- Start MySQL, then open react-field-agent-solution/server/sql/field-agent-schema-prod.sql in MySQL Workbench and run it
+- Open a terminal and execute npm install and npm run in the react-field-agent-solution/client/ folder
+- Open a browser and navigate to http://localhost:3000/
+
+## Step 4: Execute Manual Test Cases and Open Defect Reports
+- Create a copy of your Excel spreadsheet and name it Field-Agent-Test-Run-01.xlsx
+  - This copy will become your first Test Run.
 - Execute each of your test cases.
 - Document defects in Github for any deviations from expected results.
   - Use Github "issues"
-  - Navigate to any personal repository and navigate to "Issues" (e.g. https://github.com/josephpford/java-fundamentals-student/issues)
+  - Navigate to any personal repository and navigate to "Issues" (e.g. https://github.com/someuser/java-fundamentals-student/issues)
   - Assign the defects to your designated instructor.
-  - Defects should follow this format:  
+  - Defects should follow this format:
+
 ```
 Title: 
 First Name should be required
@@ -66,7 +76,7 @@ Expected Result:
 Error is displayed indicating First Name is required.
 
 Actual Result:
-No error is displayed. The agent without firstname was saved to the database and displayed in the Field Agent Main UI.
+No error is displayed. The agent without first name was saved to the database and displayed in the Field Agent Main UI.
 
 Attached please find screenshot of Add Agent screen as well as a screenshot of the Field Agent Main UI displaying the newly added agent.
 ```
