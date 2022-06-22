@@ -6,11 +6,13 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class AgentService {
 
     private final AgentRepository repository;
+    private final Random random = new Random();
 
     public AgentService(AgentRepository repository) {
         this.repository = repository;
@@ -37,7 +39,18 @@ public class AgentService {
 
         agent = repository.add(agent);
         result.setPayload(agent);
+        someExpensiveOperation();
         return result;
+    }
+
+    private static final long MAX_SLEEP_SECONDS = 2;
+
+    private void someExpensiveOperation() {
+        try {
+            Thread.sleep((long)(Math.random() * MAX_SLEEP_SECONDS * 1000));
+        } catch (InterruptedException ignored) {
+
+        }
     }
 
     public Result<Agent> update(Agent agent) {
@@ -60,6 +73,7 @@ public class AgentService {
     }
 
     public boolean deleteById(int agentId) {
+        someExpensiveOperation();
         return repository.deleteById(agentId);
     }
 

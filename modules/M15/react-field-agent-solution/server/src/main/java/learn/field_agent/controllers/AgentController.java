@@ -1,5 +1,6 @@
 package learn.field_agent.controllers;
 
+import learn.field_agent.controllers.exception.ResourceNotFoundException;
 import learn.field_agent.domain.AgentService;
 import learn.field_agent.domain.Result;
 import learn.field_agent.models.Agent;
@@ -26,8 +27,12 @@ public class AgentController {
     }
 
     @GetMapping("/{agentId}")
-    public Agent findById(@PathVariable int agentId) {
-        return service.findById(agentId);
+    public Agent findById(@PathVariable int agentId) throws ResourceNotFoundException {
+        final Agent agent = service.findById(agentId);
+        if (agent == null) {
+            throw new ResourceNotFoundException();
+        }
+        return agent;
     }
 
     @PostMapping
