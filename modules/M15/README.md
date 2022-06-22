@@ -38,11 +38,11 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 
 ### Quality Engineering Overview
 - [Introduction to Quality Engineering](./lessons/M15-introduction-to-quality-engineering.md)
-- [Introduction to Defects](./lessons/M15-introduction-to-defects.md)
-- [QA vs QM vs QE](./lessons/M15-qa-qm-qe.md)
-- [Software Development Methodologies](./lessons/M15-software-development-methodologies.md)
-- [Test Strategies and Levels](./lessons/M15-test-strategies-and-levels.md)
-- [Careers in Quality Engineering](./lessons/M15-careers-in-quality-engineering.md)
+  - [Introduction to Defects](./lessons/M15-introduction-to-defects.md)
+  - [QA vs QM vs QE](./lessons/M15-qa-qm-qe.md)
+  - [Software Development Methodologies](./lessons/M15-software-development-methodologies.md)
+  - [Test Strategies and Levels](./lessons/M15-test-strategies-and-levels.md)
+  - [Careers in Quality Engineering](./lessons/M15-careers-in-quality-engineering.md)
 - [Quality Engineering Summary](./lessons/M15-qe-overview-summary.md)
 - [Introduction Exercises](./exercises/M15-exercise-introduction-to-quality-engineering.md)
 
@@ -60,7 +60,9 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 - [Introduction to Selenium](./lessons/M15-introduction-to-selenium.md)
 
 ### Exercises
-- [Automated Testing with Selenium](./exercises/M15-exercise-automated-testing.md)
+- [Automated Testing with Selenium Part 1](./exercises/M15-exercise-automated-testing-part1.md)
+- [Automated Testing with Selenium Part 2](./exercises/M15-exercise-automated-testing-part2.md)
+- [Automated Testing with Selenium Part 3](./exercises/M15-exercise-automated-testing-part3.md)
 
 ## Day 4 - Performance Test Automation
 

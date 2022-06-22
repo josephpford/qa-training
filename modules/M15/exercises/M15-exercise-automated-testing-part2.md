@@ -1,4 +1,6 @@
-# Part 2: Record and Playback
+# Automated Testing with Selenium
+
+## Part 2: Record and Playback
 1. If you haven't already, follow the steps in [M15-exercise-manual-testing.md](./M15-exercise-manual-testing.md) to "Prepare the test environment"
 2. Open Chrome, then open the Selenium IDE extension
 
@@ -7,10 +9,10 @@
 3. Give the project any name, and set the base URL to http://localhost:3000 and click Start Recording.
 4. A new browser window should open and Field Agents should be displayed. 
 5. Add a new agent
- - When adding an agent, make sure to exercise each field, even optional ones, so that Selenium IDE captures information about those fields. 
+  - When adding an agent, make sure to exercise each field, even optional ones, so that Selenium IDE captures information about those fields. 
 6. After adding the agent, 
- - Right click on the new agent's name and select Selenium IDE -> Assert -> Text. 
- - Right click on the new agent's DOB and select Selenium IDE -> Assert -> Text.
+  - Right click on the new agent's name and select Selenium IDE -> Assert -> Text. 
+  - Right click on the new agent's DOB and select Selenium IDE -> Assert -> Text.
 7. Click the Delete button
 8. In the confirmation dialog, "Assert" all of the data. (Right Click, Assert Text)
 9. Confirm the delete
@@ -317,3 +319,6 @@ public class AddThenDeleteAgentTest {
   }
 }
 ```
+
+Next
+[Part 3](./M15-exercise-automated-testing-part3.md)

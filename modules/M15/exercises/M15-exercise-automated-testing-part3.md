@@ -1,8 +1,10 @@
-# Part 3: Keyword Driven - Parameterized
+# Automated Testing with Selenium
+
+## Part 3: Keyword Driven - Parameterized
 
 Next we'll use the existing code to help us create re-usable components that we can use in other tests.
 
-## Create new AddAgent class
+### Create new AddAgent class
 
 Add the following base code. 
 
@@ -72,7 +74,11 @@ public class AgentTests {
 
 ```
 
-Notice both tests use the exact same flow, but with different data. This is considered Keyword Driven, Parameterized. It is not considered Data-Driven because the flow is still hard-coded into our test suite. Use the previous test case to help you fill out the TODOs. When you are done, your code should look something like this.
+Notice both tests use the exact same flow, but with different data. This is considered Keyword Driven, Parameterized. It is not considered Data-Driven because the flow is still hard-coded into our test suite.
+
+### Finish To-Dos
+
+Use the previous test case to help you fill out the TODOs. When you are done, your code should look something like this.
 
 ```
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -162,7 +168,6 @@ public class AgentTests {
     }
 
 }
-
 ```
 
 Note that while recording, you may have seen "N/A" for any fields that were not filled in, but the [Requirements](../exercises/M15-exercise-manual-testing.md) stated that "unknown" should be displayed. Frequently while Recording automation, users will forget that the Application Under Test is NOT the source of truth, rather the requirements are. It is important to go back to your requirements from time to time to make sure you are automating for what the application should display, not what the application is actually displaying.
