@@ -34,11 +34,11 @@ In this exercise, you will review requirements for the Field Agent UI, then crea
   - Boundary Testing
 
 ## Step 3: Prepare the test environment
-- Download and extract the provided [react-field-agent-solution.zip](../assets/react-field-agent-solution.zip)
-- Open react-field-agent-solution/server/ folder in IntelliJ as a Maven project and run the SpringBootApplication (App)
+
+- Open the `react-field-agent-solution/server/` folder in IntelliJ as a Maven project and run the SpringBootApplication (App)
   - You probably have to add this to your Run Configuration: `FIELD_AGENT_DB_USERNAME=root; FIELD_AGENT_DB_PASSWORD=passwd`
-- Start MySQL, then open react-field-agent-solution/server/sql/field-agent-schema-prod.sql in MySQL Workbench and run it
-- Open a terminal and execute npm install and npm run in the react-field-agent-solution/client/ folder
+- Start MySQL, then open `react-field-agent-solution/server/sql/field-agent-schema-prod.sql` in MySQL Workbench and run it
+- Open a Terminal and in `react-field-agent-solution/client/` execute `npm install` and `npm run` 
 - Open a browser and navigate to http://localhost:3000/
 
 ## Step 4: Execute Manual Test Cases and Open Defect Reports
