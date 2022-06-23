@@ -4,7 +4,7 @@ Teams don't just sit down and start writing software. They follow a process whic
 
 ### Waterfall 
 
-(Waterfall)[https://en.wikipedia.org/wiki/Waterfall_model] projects follow a fairly strict, engineering based development model. The model consists of phases, and each phase is worked on in order. You don't proceed to the next phase until the previous phase is complete. The phases include:
+[Waterfall](https://en.wikipedia.org/wiki/Waterfall_model) projects follow a fairly strict, engineering based development model. The model consists of phases, and each phase is worked on in order. You don't proceed to the next phase until the previous phase is complete. The phases include:
 - Requirements gathering
   - During this phase, all requirements are documented. All stake-holders/customers previously mentioned have input at this phase. Once requirements are finalized, they will be reviewed by a cross-functional team made up of developers, testers, business analysts, product owners, architects, other development teams, etc.
   - The project proceeds to the next phase once all the requirements have been documented and agreed to by all stake-holders

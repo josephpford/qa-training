@@ -1,4 +1,4 @@
-# Defects
+# Introduction to Defects
 
 Defects are deviations from expected behavior. If the product is supposed to be red, but it's blue, that's a defect. If the email address is supposed to be validated for correctness, but there is no validation pop-up to the user when they enter an invalid email address, that is a defect. If the system is supposed to be able to respond within 25ms, but it responds in 35ms, that is a defect. The way defects are discovered are many, but typically occurs during some form of "testing". Worst case, they are discovered by customers!
 

@@ -20,6 +20,9 @@
 ![Selenium IDE - Add Agent](../assets/selenium-ide-add-agent.png)
 
 7. Click the stop button in Selenium IDE and give the test any name
+
+## Part 3: Export to Java
+
 8. Right Click on the test name and select Export. Choose Java / JUnit and leave all the other options default. Save it anywhere on your computer. Don't close the Selenium IDE or new Browser Window it opened quite yet.
 9. Create a new blank Java Maven project in IntelliJ in M15/assessment/field-agent-tests
 10. Add the following dependencies in your pom.xml and rebuild the project. 

@@ -1,4 +1,4 @@
-# Lesson: Defects
+# Lesson: Defects Part 2
 
 ## Introduction
 

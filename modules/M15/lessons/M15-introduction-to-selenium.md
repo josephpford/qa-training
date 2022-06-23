@@ -6,7 +6,6 @@ Selenium is an open source project to help with automating web browsers. Seleniu
  - Selenium Client and WebDriver Language Bindings
  - Selenium Grid
 
-
 ## Learning Outcomes
 
 When you've finished this lesson and its exercises, you should understand the different Selenium components and how to use them to automate your manual test cases.
