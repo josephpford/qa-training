@@ -4,7 +4,7 @@
 @baseurl = http://{{host}}/api
 
 # Use the auth endpoint to get a valid token
-@token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0b2RvcyIsInN1YiI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjEsInJvbGVzIjoiQURNSU4iLCJleHAiOjE2MzE5MTYyNTl9.mY0Ru-Q6fpS1LmVg_kWfgIzGoBF6FRxX_qOspMR2pGY
+@token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0b2RvcyIsInN1YiI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjEsInJvbGVzIjoiQURNSU4iLCJleHAiOjE2NTYyODIwMzF9.2KI5z83v2b0PVIVacLtAtMl2AOmVxqCxD81LZ8freOE
 
 ### Should return a 200 status code with todos in the response body
 
