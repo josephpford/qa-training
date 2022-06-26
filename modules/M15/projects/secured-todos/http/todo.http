@@ -1,0 +1,116 @@
+@hostname = localhost
+@port = 8080
+@host = {{hostname}}:{{port}}
+@baseurl = http://{{host}}/api
+
+# Use the auth endpoint to get a valid token
+@token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0b2RvcyIsInN1YiI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjEsInJvbGVzIjoiQURNSU4iLCJleHAiOjE2MzE5MTYyNTl9.mY0Ru-Q6fpS1LmVg_kWfgIzGoBF6FRxX_qOspMR2pGY
+
+### Should return a 200 status code with todos in the response body
+
+GET {{baseurl}}/todos HTTP/1.1
+Authorization: Bearer {{token}}
+
+### Should return a 200 status code with a single todo in the response body
+
+GET {{baseurl}}/todos/1 HTTP/1.1
+Authorization: Bearer {{token}}
+
+### Should return a 404 status code
+
+GET {{baseurl}}/todos/99999 HTTP/1.1
+Authorization: Bearer {{token}}
+
+### Should return a 404 status code when requesting an existing todo ID that doesn't belong to the current user
+
+GET {{baseurl}}/todos/6 HTTP/1.1
+Authorization: Bearer {{token}}
+
+### Should return a 400 status code with an error message
+
+POST {{baseurl}}/todos HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Should return a 400 status code with an error message
+
+POST {{baseurl}}/todos HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{}
+
+### Should return a 201 status code with the new todo in the response body
+
+POST {{baseurl}}/todos HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "description": "New todo."
+}
+
+### Should return a 409 status code
+
+PUT {{baseurl}}/todos/1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "id": 2,
+    "description": "Updated todo."
+}
+
+### Should return a 404 status code when attempting to update a todo that doesn't belong to the current user
+
+PUT {{baseurl}}/todos/6 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "id": 6,
+    "description": "Updated todo."
+}
+
+### Should return a 400 status code with an error message
+
+PUT {{baseurl}}/todos/1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Should return a 400 status code with an error message
+
+PUT {{baseurl}}/todos/1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "id": 1
+}
+
+### Should return a 204 status code with no response body content
+
+PUT {{baseurl}}/todos/1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "id": 1,
+    "description": "Updated todo."
+}
+
+### Should return a 404 status code when attempting to delete a todo that doesn't belong to the current user
+
+DELETE {{baseurl}}/todos/6 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+### Should return a 404 status code when attempting to delete a todo that doesn't exist
+
+DELETE {{baseurl}}/todos/99999 HTTP/1.1
+Authorization: Bearer {{token}}
+
+### Should return a 204 status code with no response body content
+
+DELETE {{baseurl}}/todos/1 HTTP/1.1
+Authorization: Bearer {{token}}
