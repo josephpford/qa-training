@@ -36,6 +36,31 @@ function ToDos() {
     getToDos(auth.user.token);
   }, [auth.user.token]);
 
+  const completedClickHandler = (toDoId) => {
+    const toDoToComplete = toDos.find(toDo => toDo.id === toDoId);
+
+    if (window.confirm(`Complete the todo with the description "${toDoToComplete.description}"?`)) {
+      const init = {
+        method: 'PUT', // GET by default
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${auth.user.token}`
+        },
+        body: JSON.stringify({ ...toDoToComplete, completed: true })
+      };
+  
+      fetch(`http://localhost:8080/api/todos/${toDoId}`, init)
+        .then(response => {
+          if (response.status === 204) {
+            getToDos(auth.user.token);
+          } else {
+            Promise.reject('Something unexpected went wrong :)');
+          }
+        })
+        .catch(error => console.log(error));
+    }
+  };
+
   const toDoDeleteClickHandler = (toDoId) => {
 
     const toDoToDelete = toDos.find(toDo => toDo.id === toDoId);
@@ -77,7 +102,7 @@ function ToDos() {
             <tr>
               <th>ID</th>
               <th>Description</th>
-              <th>Category</th>
+              <th>Due Date</th>
               <th>&nbsp;</th>
             </tr>
           </thead>
@@ -86,10 +111,13 @@ function ToDos() {
               <tr key={toDo.id}>
                 <td>{toDo.id}</td>
                 <td>{toDo.description}</td>
-                <td>{toDo.category}</td>
+                <td>{toDo.dueDate ? toDo.dueDate : 'N/A'}</td>
                 <td>
                   <div className="float-right">
-                    <Link to={`/todos/edit/${toDo.id}`} className="btn btn-primary btn-sm">
+                    <button className="btn btn-success btn-sm"
+                      onClick={() => completedClickHandler(toDo.id)}>
+                        <i className="bi bi-check"></i> Complete</button>
+                    <Link to={`/todos/edit/${toDo.id}`} className="btn btn-primary btn-sm ml-2">
                       <i className="bi bi-pencil"></i> Edit
                     </Link>
                     <button className="btn btn-danger btn-sm ml-2" 

@@ -4,6 +4,7 @@ import learn.todos.data.ToDoRepository;
 import learn.todos.models.ToDo;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -14,8 +15,8 @@ public class ToDoService {
         this.repository = repository;
     }
 
-    public List<ToDo> findByAppUserId(int appUserId) {
-        return repository.findByAppUserId(appUserId);
+    public List<ToDo> findByAppUserId(int appUserId, boolean isCompleted) {
+        return repository.findByAppUserId(appUserId, isCompleted);
     }
 
     public ToDo findByIdAndAppUserId(int toDoId, int appUserId) {

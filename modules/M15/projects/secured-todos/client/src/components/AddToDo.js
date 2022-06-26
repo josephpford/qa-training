@@ -6,7 +6,7 @@ import Errors from './Errors';
 
 function AddToDo() {
   const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('');
+  const [dueDate, setDueDate] = useState('');
   const [errors, setErrors] = useState([]);
 
   const auth = useContext(AuthContext);
@@ -17,15 +17,16 @@ function AddToDo() {
     setDescription(event.target.value);
   };
 
-  const categoryOnChangeHandler = (event) => {
-    setCategory(event.target.value);
+  const dueDateOnChangeHandler = (event) => {
+    setDueDate(event.target.value);
   };
 
   const addToDoFormSubmitHandler = (event) => {
     event.preventDefault();
 
     const newToDo = {
-      description
+      description,
+      dueDate
     };
 
     const init = {
@@ -68,9 +69,9 @@ function AddToDo() {
             value={description} onChange={descriptionOnChangeHandler} />
         </div>
         <div className="form-group">
-          <label htmlFor="category">Category:</label>
-          <input className="form-control" type="text" id="category" name="category" 
-            value={category} onChange={categoryOnChangeHandler} />
+          <label htmlFor="dueDate">Due Date:</label>
+          <input className="form-control" type="date" id="dueDate" name="dueDate" 
+            value={dueDate} onChange={dueDateOnChangeHandler} />
         </div>
         <div className="mt-5">
           <button className="btn btn-success" type="submit">

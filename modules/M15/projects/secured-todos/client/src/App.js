@@ -37,8 +37,6 @@ function App() {
   // this side effect will run only once when the component is loading
 
   const login = (token) => {
-    console.log(token);
-
     // store the token away to persist the user's login
     localStorage.setItem(TOKEN_KEY, token);
 
@@ -52,14 +50,6 @@ function App() {
     // }
 
     // decode the token string into a JavaScript object
-    const tokenObj = jwt_decode(token);
-    console.log(tokenObj);
-
-    // long form...
-    // const username = tokenObj.sub;
-    // const rolesString = tokenObj.roles;
-
-    // short form using destructuring...
     const { id, sub: username, roles: rolesString } = jwt_decode(token);
 
     // Split the roles string into an array of roles.
@@ -75,8 +65,6 @@ function App() {
         return this.roles.includes(role);
       }
     };
-
-    console.log(user);
 
     // update the user state
     setUser(user);

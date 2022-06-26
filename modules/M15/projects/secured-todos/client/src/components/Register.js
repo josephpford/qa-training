@@ -103,7 +103,6 @@ function Register() {
             })
             .catch(error => console.log(error));
         } else {
-          console.log(data);
           // we have errors to display
           setErrors(data);
         }

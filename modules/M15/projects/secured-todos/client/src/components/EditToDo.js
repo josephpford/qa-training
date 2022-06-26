@@ -6,7 +6,8 @@ import Errors from './Errors';
 
 function EditToDo() {
   const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('');
+  const [dueDate, setDueDate] = useState('');
+  const [completed, setCompleted] = useState(false);
   const [errors, setErrors] = useState([]);
 
   const auth = useContext(AuthContext);
@@ -18,9 +19,13 @@ function EditToDo() {
     setDescription(event.target.value);
   };
 
-  const categoryOnChangeHandler = (event) => {
-    setCategory(event.target.value);
+  const dueDateOnChangeHandler = (event) => {
+    setDueDate(event.target.value);
   };
+
+  const completedOnChangeHandler = (event) => {
+    setCompleted(event.target.checked);
+  }
 
   useEffect(() => {
     // GET http://localhost:8080/api/todos/1 HTTP/1.1
@@ -41,6 +46,8 @@ function EditToDo() {
       })
       .then(data => {
         setDescription(data.description);
+        setDueDate(data.dueDate);
+        setCompleted(data.completed);
       })
       .catch(error => console.log(error));
   }, [id, auth.user]); // run anytime that the id or auth.user object changes
@@ -50,7 +57,9 @@ function EditToDo() {
 
     const updatedToDo = {
       id: id,
-      description
+      description,
+      dueDate,
+      completed
     };
 
     const init = {
@@ -94,9 +103,14 @@ function EditToDo() {
             value={description} onChange={descriptionOnChangeHandler} />
         </div>
         <div className="form-group">
-          <label htmlFor="category">Category:</label>
-          <input className="form-control" type="text" id="category" name="category" 
-            value={category} onChange={categoryOnChangeHandler} />
+          <label htmlFor="dueDate">Due Date:</label>
+          <input className="form-control" type="date" id="dueDate" name="dueDate" 
+            value={dueDate} onChange={dueDateOnChangeHandler} />
+        </div>
+        <div className="form-group">
+          <label htmlFor="completed">Is Completed?</label>
+          <input className="ml-2" type="checkbox" id="completed" name="completed" 
+            checked={completed} onChange={completedOnChangeHandler} />
         </div>
         <div className="mt-5">
           <button className="btn btn-success" type="submit">

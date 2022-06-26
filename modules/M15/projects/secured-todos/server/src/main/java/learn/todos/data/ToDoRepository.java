@@ -5,7 +5,7 @@ import learn.todos.models.ToDo;
 import java.util.List;
 
 public interface ToDoRepository {
-    List<ToDo> findByAppUserId(int appUserId);
+    List<ToDo> findByAppUserId(int appUserId, boolean isCompleted);
 
     ToDo findByIdAndAppUserId(int toDoId, int appUserId);
 

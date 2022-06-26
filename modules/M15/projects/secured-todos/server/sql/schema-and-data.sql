@@ -32,6 +32,8 @@ create table todo (
     todo_id int primary key auto_increment,
     app_user_id int not null,
     `description` varchar(200) not null,
+    due_date date null,
+    is_completed bit not null default 0,
     constraint fk_todo_app_user_id
         foreign key (app_user_id)
         references app_user(app_user_id)
@@ -52,15 +54,16 @@ insert into app_user_role
     (1, 2),
     (2, 1);
 
-insert into todo (app_user_id, `description`)
+insert into todo (app_user_id, `description`, due_date)
 	values
-    (1, 'Buy milk.'),
-    (1, 'Walk the dog.'),
-    (1, 'Wash the car.'),
-    (1, 'Workout.'),
-    (1, 'Make dinner reservations.'),
-    (2, 'Cook dinner.'),
-    (2, 'Pack a lunch.'),
-    (2, 'Give the dog a bath.'),
-    (2, 'Change the oil.'),
-    (2, 'Get cash from the ATM.');
+    (1, 'Buy milk.', null),
+    (1, 'Walk the dog.', null),
+    (1, 'Wash the car.', null),
+    (1, 'Workout.', null),
+    (1, 'Make dinner reservations.', null),
+    (1, 'Save money for vacation.', '2022-12-01'),
+    (2, 'Cook dinner.', null),
+    (2, 'Pack a lunch.', null),
+    (2, 'Give the dog a bath.', null),
+    (2, 'Change the oil.', null),
+    (2, 'Get cash from the ATM.', null);

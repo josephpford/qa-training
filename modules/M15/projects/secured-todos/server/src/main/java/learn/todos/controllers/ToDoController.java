@@ -24,7 +24,14 @@ public class ToDoController {
     public List<ToDo> get(UsernamePasswordAuthenticationToken principal) {
         AppUser appUser = (AppUser)principal.getPrincipal();
 
-        return toDoService.findByAppUserId(appUser.getAppUserId());
+        return toDoService.findByAppUserId(appUser.getAppUserId(), false);
+    }
+
+    @GetMapping("/completed")
+    public List<ToDo> getCompleted(UsernamePasswordAuthenticationToken principal) {
+        AppUser appUser = (AppUser)principal.getPrincipal();
+
+        return toDoService.findByAppUserId(appUser.getAppUserId(), true);
     }
 
     @GetMapping("/{id}")
