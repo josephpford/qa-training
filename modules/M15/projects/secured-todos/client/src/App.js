@@ -109,54 +109,58 @@ function App() {
 
         <Header />
 
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/todos">
-            {user ? (
-              <ToDos />
-            ) : (
-              <Redirect to="/login" />
-            )}
-          </Route>
-          <Route path="/todos/add">
-            {user ? (
-              <AddToDo />
-            ) : (
-              <Redirect to="/login" />
-            )}
-          </Route>
-          <Route path="/todos/edit/:id">
-            {user ? (
-              <EditToDo />
-            ) : (
-              <Redirect to="/login" />
-            )}
-          </Route>
-          <Route path="/todos/delete/:id">
-            {user ? (
-              <DeleteToDo />
-            ) : (
-              <Redirect to="/login" />
-            )}
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
+        <div className="p-4">
+
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route exact path="/todos">
+              {user ? (
+                <ToDos />
+              ) : (
+                <Redirect to="/login" />
+              )}
+            </Route>
+            <Route path="/todos/add">
+              {user ? (
+                <AddToDo />
+              ) : (
+                <Redirect to="/login" />
+              )}
+            </Route>
+            <Route path="/todos/edit/:id">
+              {user ? (
+                <EditToDo />
+              ) : (
+                <Redirect to="/login" />
+              )}
+            </Route>
+            <Route path="/todos/delete/:id">
+              {user ? (
+                <DeleteToDo />
+              ) : (
+                <Redirect to="/login" />
+              )}
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+
+        </div>
 
       </Router>
 

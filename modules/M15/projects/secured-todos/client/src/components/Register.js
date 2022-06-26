@@ -115,7 +115,7 @@ function Register() {
     <>
       <h2 className="my-4">Register</h2>
       <Errors errors={errors} />
-      <form onSubmit={formSubmitHandler}>
+      <form onSubmit={formSubmitHandler} className="col-6">
         <div className="form-group">
           <label htmlFor="username">Username:</label>
           <input className="form-control" type="text" id="username" name="username" 
@@ -139,6 +139,9 @@ function Register() {
           </Link>
         </div>
       </form>
+      <div className="p-4">
+        <Link to="/login">I already have an account</Link>
+      </div>
     </>
   );
 }

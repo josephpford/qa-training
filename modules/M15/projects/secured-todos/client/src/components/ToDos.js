@@ -21,7 +21,13 @@ function ToDos() {
 
     // loading initial data for our component
     fetch('http://localhost:8080/api/todos', init)
-      .then(response => response.json())
+      .then(response => {
+        if (response.status === 200) {
+          return response.json();
+        } else {
+          return Promise.reject(`Unexpected status code: ${response.status}`);
+        }
+      })
       .then(data => setToDos(data))
       .catch(error => console.log(error));
   };
@@ -32,24 +38,28 @@ function ToDos() {
 
   const toDoDeleteClickHandler = (toDoId) => {
 
-    const init = {
-      method: 'DELETE', // GET by default
-      headers: {
-        'Authorization': `Bearer ${auth.user.token}`
-      }
-    };
+    const toDoToDelete = toDos.find(toDo => toDo.id === toDoId);
 
-    fetch(`http://localhost:8080/api/todos/${toDoId}`, init)
-      .then(response => {
-        if (response.status === 204) {
-          getToDos(auth.user.token);
-        } else if (response.status === 404) {
-          Promise.reject(`ToDo ID ${toDoId} not found`);
-        } else {
-          Promise.reject('Something unexpected went wrong :)');
+    if (window.confirm(`Delete the todo with the description "${toDoToDelete.description}"?`)) {
+      const init = {
+        method: 'DELETE', // GET by default
+        headers: {
+          'Authorization': `Bearer ${auth.user.token}`
         }
-      })
-      .catch(error => console.log(error));
+      };
+  
+      fetch(`http://localhost:8080/api/todos/${toDoId}`, init)
+        .then(response => {
+          if (response.status === 204) {
+            getToDos(auth.user.token);
+          } else if (response.status === 404) {
+            Promise.reject(`ToDo ID ${toDoId} not found`);
+          } else {
+            Promise.reject('Something unexpected went wrong :)');
+          }
+        })
+        .catch(error => console.log(error));
+    }
   };
 
   return (
@@ -60,35 +70,40 @@ function ToDos() {
       <Link to="/todos/add" className="btn btn-primary mb-4">
         <i className="bi bi-plus-circle-fill"></i> Add ToDo
       </Link>
-      <table className="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>&nbsp;</th>
-          </tr>
-        </thead>
-        <tbody>
-          {toDos.map(toDo => (
-            <tr key={toDo.id}>
-              <td>{toDo.id}</td>
-              <td>{toDo.description}</td>
-              <td>{toDo.category}</td>
-              <td>
-                <div className="float-right">
-                  <Link to={`/todos/edit/${toDo.id}`} className="btn btn-primary btn-sm">
-                    <i className="bi bi-pencil"></i> Edit
-                  </Link>
-                  <button className="btn btn-danger btn-sm ml-2" 
-                    onClick={() => toDoDeleteClickHandler(toDo.id)}>
-                      <i className="bi bi-trash"></i> Delete</button>
-                </div>
-              </td>
+
+      {toDos.length > 0 ? (
+        <table className="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Description</th>
+              <th>Category</th>
+              <th>&nbsp;</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {toDos.map(toDo => (
+              <tr key={toDo.id}>
+                <td>{toDo.id}</td>
+                <td>{toDo.description}</td>
+                <td>{toDo.category}</td>
+                <td>
+                  <div className="float-right">
+                    <Link to={`/todos/edit/${toDo.id}`} className="btn btn-primary btn-sm">
+                      <i className="bi bi-pencil"></i> Edit
+                    </Link>
+                    <button className="btn btn-danger btn-sm ml-2" 
+                      onClick={() => toDoDeleteClickHandler(toDo.id)}>
+                        <i className="bi bi-trash"></i> Delete</button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p>You don't have any todos yet! Better get busy adding some.</p>
+      )}
 
     </div>
   );

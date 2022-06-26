@@ -1,5 +1,6 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 import AuthContext from '../AuthContext';
 
 function NavBar() {
@@ -7,23 +8,24 @@ function NavBar() {
 
   return (
     <>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/todos">ToDos</Link></li>
-        {!auth.user && (
-          <>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/register">Register</Link></li>
-          </>
-        )}
-      </ul>
-      {auth.user && (
-        <div>
-          <p>Hello {auth.user.username}!</p>
-          <button onClick={() => auth.logout()} className="btn btn-primary">Logout</button>
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink>
+          <NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink>
+          <NavLink className="nav-link" activeClassName="active" to="/todos">ToDos</NavLink>
         </div>
+      </div>
+      {!auth.user && (
+        <>
+          <NavLink className="nav-link" activeClassName="active" to="/login">Login</NavLink>
+          <NavLink className="nav-link" activeClassName="active" to="/register">Register</NavLink>
+        </>
+      )}
+      {auth.user && (
+        <>
+          <div className="align-middle mr-4">Hello {auth.user.username}!</div>
+          <button onClick={() => auth.logout()} className="btn btn-primary">Logout</button>
+        </>
       )}
     </>
   );
