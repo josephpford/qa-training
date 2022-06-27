@@ -42,13 +42,13 @@ public class AppUserJdbcTemplateRepository implements AppUserRepository {
 
     @Transactional
     public AppUser create(AppUser user) {
-        final String sql = "insert into app_user (username, password_hash) values (?, ?);";
+        final String sql = "insert into app_user (username, password) values (?, ?);";
 
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
         int rowsAffected = jdbcTemplate.update(connection -> {
             PreparedStatement ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, user.getUsername());
-            ps.setString(2, user.getPassword());
+            ps.setString(2, user.getOriginalPassword());
             return ps;
         }, keyHolder);
 
