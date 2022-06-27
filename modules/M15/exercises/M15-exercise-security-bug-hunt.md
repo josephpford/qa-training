@@ -31,27 +31,31 @@ As an existing user I can use my username and password to login to the applicati
 
 As a new user I can create a new account by providing a username and password.
 
-As a user I can view all of my incomplete todos.
+As an authenticated user I can view all of my incomplete todos.
 
-As a user I can create a new todo with a description and an optional due date.
+As an authenticated user I can create a new todo with a description and an optional due date.
 
-As a user I can edit a todo's description, due date, and its completed status.
+As an authenticated user I can edit a todo's description, due date, and its completed status.
 
-As a user I can delete a todo.
+As an authenticated user I can delete a todo.
 
-As a user I can mark a todo as complete.
+As an authenticated user I can mark a todo as complete.
 
-As a user I shouldn't be able to view, create, update, or delete another user's todos.
+As an authenticated user I shouldn't be able to view, create, update, or delete another user's todos.
+
+As an anonymous user (i.e. unauthenticated user) I shouldn't be able to view, create, update, or delete todos.
 
 ## Bugs
 
-_TODO_ list the OWASP categories for each of the bugs that are in the application
+The application contains at least 10 security-related bugs in the following OWASP top 10 categories:
 
-
-
-
-
-
+* [A01:2021-Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
+* [A02:2021-Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)
+* [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)
+* [A04:2021-Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/)
+* [A05:2021-Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
+* [A07:2021-Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
+* [A09:2021-Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/)
 
 ## Approach
 
@@ -59,29 +63,7 @@ _TODO_ list the OWASP categories for each of the bugs that are in the applicatio
 
 Start the bug hunt by manually testing the application (i.e. using the application as a user). Avoid looking at the source code. Instead, assume that the application is being hosted using a cloud service and you don't have the ability to review the source code for the backend or the frontend.
 
-Think like a hacker. **Can you do things that you shouldn't be allowed to do?**
-
-_TOOD_ Include or remove???
-
-* Is authentication required for each of the "secured" API endpoints?
-* Can I retrieve, create, update, or delete data that's associated with another user account?
-* Can I inject HTML and JavaScript?
-* Can I inject SQL statements?
-
-_TODO_ List suggestions for extensions that make it easier to hack HTTP requests to the API
-
-Tamper Dev (https://tamper.dev/)
-Request Maker (https://chrome.google.com/webstore/detail/request-maker/kajfghlhfkcocafkcjlajldicbikpgnp?hl=en)
-Live HTTP Headers (https://chrome.google.com/webstore/detail/live-http-headers/ianhploojoffmpcpilhgpacbeaifanid?hl=en)
-HackBar (https://chrome.google.com/webstore/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc?hl=en)
-Bug Magnet (https://chrome.google.com/webstore/detail/bug-magnet/efhedldbjahpgjcneebmbolkalbhckfi?hl=en)
-ModHeader (https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=en)
-
-
-
-
-
-
+Think like a hacker. Use the REST Client extension in Visual Studio code to directly manipulate HTTP requests. **Can you do things that you shouldn't be allowed to do?**
 
 ### Second Pass
 
