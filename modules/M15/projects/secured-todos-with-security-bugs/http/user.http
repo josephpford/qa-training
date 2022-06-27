@@ -20,7 +20,7 @@ Content-Type: application/json
 
 {
     "username": "john@smith.com",
-    "password": "P@ssw0rd!"
+    "password": "password"
 }
 
 ### Should return a 400 status code with the validation messages in the response body

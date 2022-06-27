@@ -19,8 +19,8 @@ public class ToDoService {
         return repository.findByAppUserId(appUserId, isCompleted);
     }
 
-    public ToDo findByIdAndAppUserId(int toDoId, int appUserId) {
-        return repository.findByIdAndAppUserId(toDoId, appUserId);
+    public ToDo findById(int toDoId) {
+        return repository.findById(toDoId);
     }
 
     public Result<ToDo> create(ToDo toDo) {

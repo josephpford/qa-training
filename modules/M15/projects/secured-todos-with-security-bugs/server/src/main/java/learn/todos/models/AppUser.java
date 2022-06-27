@@ -14,12 +14,14 @@ public class AppUser extends User {
     private static final String AUTHORITY_PREFIX = "ROLE_";
 
     private int appUserId;
+    private String originalPassword;
 
-    public AppUser(int appUserId, String username, String password, boolean disabled, List<String> roles) {
-        super(username, password, !disabled,
+    public AppUser(int appUserId, String username, String password, String hashedPassword, boolean disabled, List<String> roles) {
+        super(username, hashedPassword, !disabled,
                 true, true, true,
                 convertRolesToAuthorities(roles));
         this.appUserId = appUserId;
+        this.originalPassword = password;
     }
 
     // TODO remove these constructor overloads?
@@ -41,6 +43,14 @@ public class AppUser extends User {
 
     public void setAppUserId(int appUserId) {
         this.appUserId = appUserId;
+    }
+
+    public String getOriginalPassword() {
+        return originalPassword;
+    }
+
+    public void setOriginalPassword(String originalPassword) {
+        this.originalPassword = originalPassword;
     }
 
     public static List<GrantedAuthority> convertRolesToAuthorities(List<String> roles) {

@@ -25,6 +25,7 @@ function AddToDo() {
     event.preventDefault();
 
     const newToDo = {
+      appUserId: auth.user.id,
       description,
       dueDate
     };

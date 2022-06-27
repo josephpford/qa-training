@@ -28,13 +28,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // The order of the antMatchers() method calls is important
         // as they're evaluated in the order that they're added.
         http.authorizeRequests()
-                .antMatchers("/api/create_account").permitAll()
-                .antMatchers("/api/authenticate").permitAll()
-                .antMatchers(HttpMethod.GET, "/api/todos", "/api/todos/*").hasAnyRole("USER", "ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/todos/*/incomplete", "/api/todos/*/completed", "/api/todos/*").hasAnyRole("USER", "ADMIN")
                 .antMatchers(HttpMethod.POST, "/api/todos").hasAnyRole("USER", "ADMIN")
                 .antMatchers(HttpMethod.PUT, "/api/todos/*").hasAnyRole("USER", "ADMIN")
-                .antMatchers(HttpMethod.DELETE, "/api/todos/*").hasAnyRole("USER", "ADMIN")
-                .antMatchers("/**").denyAll() // if we get to this point (i.e. nothing has matched) then deny all requests
+                .antMatchers("/**").permitAll()
                 .and()
                 .addFilter(new JwtRequestFilter(authenticationManager(), jwtConverter))
                 .sessionManagement()

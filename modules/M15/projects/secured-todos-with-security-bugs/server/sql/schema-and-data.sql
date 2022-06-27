@@ -6,7 +6,7 @@ use todos;
 create table app_user (
     app_user_id int primary key auto_increment,
     username varchar(50) not null unique,
-    password_hash varchar(2048) not null,
+    `password` varchar(50) not null,
     disabled boolean not null default(0)
 );
 
@@ -43,11 +43,10 @@ insert into app_role (`name`) values
     ('USER'),
     ('ADMIN');
 
--- passwords are set to "P@ssw0rd!"
-insert into app_user (username, password_hash, disabled)
+insert into app_user (username, `password`, disabled)
     values
-    ('john@smith.com', '$2a$10$ntB7CsRKQzuLoKY3rfoAQen5nNyiC/U60wBsWnnYrtQQi8Z3IZzQa', 0),
-    ('sally@jones.com', '$2a$10$ntB7CsRKQzuLoKY3rfoAQen5nNyiC/U60wBsWnnYrtQQi8Z3IZzQa', 0);
+    ('john@smith.com', 'password', 0),
+    ('sally@jones.com', 'password', 0);
 
 insert into app_user_role
     values

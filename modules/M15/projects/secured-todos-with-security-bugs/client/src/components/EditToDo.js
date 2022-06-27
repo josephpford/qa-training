@@ -46,7 +46,9 @@ function EditToDo() {
       })
       .then(data => {
         setDescription(data.description);
-        setDueDate(data.dueDate);
+        if (data.dueDate) {
+          setDueDate(data.dueDate);
+        }
         setCompleted(data.completed);
       })
       .catch(error => console.log(error));

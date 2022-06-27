@@ -20,7 +20,7 @@ function ToDos() {
     }
 
     // loading initial data for our component
-    fetch('http://localhost:8080/api/todos', init)
+    fetch(`http://localhost:8080/api/todos/${auth.user.id}/incomplete`, init)
       .then(response => {
         if (response.status === 200) {
           return response.json();
@@ -110,7 +110,7 @@ function ToDos() {
             {toDos.map(toDo => (
               <tr key={toDo.id}>
                 <td>{toDo.id}</td>
-                <td>{toDo.description}</td>
+                <td dangerouslySetInnerHTML={{__html: toDo.description}}></td>
                 <td>{toDo.dueDate ? toDo.dueDate : 'N/A'}</td>
                 <td>
                   <div className="float-right">

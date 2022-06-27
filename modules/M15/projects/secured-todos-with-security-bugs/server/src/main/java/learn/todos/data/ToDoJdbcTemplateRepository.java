@@ -27,12 +27,12 @@ public class ToDoJdbcTemplateRepository implements ToDoRepository {
     }
 
     @Override
-    public ToDo findByIdAndAppUserId(int toDoId, int appUserId) {
+    public ToDo findById(int toDoId) {
         final String sql = "select todo_id, app_user_id, `description`, due_date, is_completed "
                 + "from todo "
-                + "where todo_id = ? and app_user_id = ?;";
+                + "where todo_id = ?;";
 
-        return jdbcTemplate.query(sql, this::map, toDoId, appUserId).stream().findFirst().orElse(null);
+        return jdbcTemplate.query(sql, this::map, toDoId).stream().findFirst().orElse(null);
     }
 
     @Override

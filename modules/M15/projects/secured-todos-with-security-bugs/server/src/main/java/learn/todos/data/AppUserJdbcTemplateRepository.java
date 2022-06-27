@@ -5,6 +5,7 @@ import learn.todos.models.AppUser;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,9 +19,11 @@ import java.util.List;
 @Repository
 public class AppUserJdbcTemplateRepository implements AppUserRepository {
     private final JdbcTemplate jdbcTemplate;
+    private final PasswordEncoder encoder;
 
-    public AppUserJdbcTemplateRepository(JdbcTemplate jdbcTemplate) {
+    public AppUserJdbcTemplateRepository(JdbcTemplate jdbcTemplate, PasswordEncoder encoder) {
         this.jdbcTemplate = jdbcTemplate;
+        this.encoder = encoder;
     }
 
     @Override
@@ -28,11 +31,11 @@ public class AppUserJdbcTemplateRepository implements AppUserRepository {
     public AppUser findByUsername(String username) {
         List<String> roles = getRolesByUsername(username);
 
-        final String sql = "select app_user_id, username, password_hash, disabled "
+        final String sql = "select app_user_id, username, password, disabled "
                 + "from app_user "
                 + "where username = ?;";
 
-        return jdbcTemplate.query(sql, new AppUserMapper(roles), username)
+        return jdbcTemplate.query(sql, new AppUserMapper(roles, encoder), username)
                 .stream()
                 .findFirst().orElse(null);
     }

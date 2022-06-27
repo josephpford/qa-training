@@ -20,25 +20,19 @@ public class ToDoController {
         this.toDoService = toDoService;
     }
 
-    @GetMapping
-    public List<ToDo> get(UsernamePasswordAuthenticationToken principal) {
-        AppUser appUser = (AppUser)principal.getPrincipal();
-
-        return toDoService.findByAppUserId(appUser.getAppUserId(), false);
+    @GetMapping("/{appUserId}/incomplete")
+    public List<ToDo> getIncomplete(@PathVariable int appUserId) {
+        return toDoService.findByAppUserId(appUserId, false);
     }
 
-    @GetMapping("/completed")
-    public List<ToDo> getCompleted(UsernamePasswordAuthenticationToken principal) {
-        AppUser appUser = (AppUser)principal.getPrincipal();
-
-        return toDoService.findByAppUserId(appUser.getAppUserId(), true);
+    @GetMapping("/{appUserId}/completed")
+    public List<ToDo> getCompleted(@PathVariable int appUserId) {
+        return toDoService.findByAppUserId(appUserId, true);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> get(@PathVariable int id, UsernamePasswordAuthenticationToken principal) {
-        AppUser appUser = (AppUser)principal.getPrincipal();
-
-        ToDo toDo = toDoService.findByIdAndAppUserId(id, appUser.getAppUserId());
+    public ResponseEntity<?> get(@PathVariable int id) {
+        ToDo toDo = toDoService.findById(id);
 
         if (toDo == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -48,14 +42,7 @@ public class ToDoController {
     }
 
     @PostMapping
-    public ResponseEntity<?> post(@RequestBody(required = false) ToDo toDo, UsernamePasswordAuthenticationToken principal) {
-        AppUser appUser = (AppUser)principal.getPrincipal();
-
-        // Directly set the user's ID so it's not possible to add a record for another user.
-        if (toDo != null) {
-            toDo.setAppUserId(appUser.getAppUserId());
-        }
-
+    public ResponseEntity<?> post(@RequestBody(required = false) ToDo toDo) {
         Result<ToDo> result = toDoService.create(toDo);
 
         if (result.isSuccess()) {
@@ -66,23 +53,10 @@ public class ToDoController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> put(@PathVariable int id, @RequestBody(required = false) ToDo toDo, UsernamePasswordAuthenticationToken principal) {
+    public ResponseEntity<?> put(@PathVariable int id, @RequestBody(required = false) ToDo toDo) {
         // Immediately reject the request if the path ID doesn't match the record's ID.
         if (toDo != null && id != toDo.getId()) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
-        }
-
-        AppUser appUser = (AppUser)principal.getPrincipal();
-
-        // Attempt to retrieve the record for the current user
-        // to prevent the user from updating a record that doesn't belong to them.
-        if (toDoService.findByIdAndAppUserId(id, appUser.getAppUserId()) == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-
-        // Directly set the user's ID (we already confirmed above that this record belongs to the current user).
-        if (toDo != null) {
-            toDo.setAppUserId(appUser.getAppUserId());
         }
 
         Result<ToDo> result = toDoService.update(toDo);
@@ -95,15 +69,7 @@ public class ToDoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> delete(@PathVariable int id, UsernamePasswordAuthenticationToken principal) {
-        AppUser appUser = (AppUser)principal.getPrincipal();
-
-        // Attempt to retrieve the record for the current user
-        // to prevent the user from deleting a record that doesn't belong to them.
-        if (toDoService.findByIdAndAppUserId(id, appUser.getAppUserId()) == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-
+    public ResponseEntity<?> delete(@PathVariable int id) {
         Result<ToDo> result = toDoService.deleteById(id);
 
         if (result.isSuccess()) {

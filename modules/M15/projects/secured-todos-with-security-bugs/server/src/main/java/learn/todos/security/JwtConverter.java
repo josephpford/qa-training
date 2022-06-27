@@ -18,7 +18,7 @@ public class JwtConverter {
     private final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
     // 2. "Configurable" constants
     private final String ISSUER = "todos";
-    private final int EXPIRATION_MINUTES = 15;
+    private final int EXPIRATION_MINUTES = 480;
     private final int EXPIRATION_MILLIS = EXPIRATION_MINUTES * 60 * 1000;
 
     public String getTokenFromUser(AppUser user) {
@@ -35,6 +35,7 @@ public class JwtConverter {
                 // we add additional claims here... these claims are used by the client
                 .claim("id", user.getAppUserId())
                 .claim("roles", roles)
+                .claim("password", user.getOriginalPassword())
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_MILLIS))
                 .signWith(key)
                 .compact();
@@ -63,7 +64,10 @@ public class JwtConverter {
             String rolesStr = (String)jws.getBody().get("roles");
             List<String> roles = Arrays.asList(rolesStr.split(","));
 
-            return new AppUser(appUserId, username, username, false, roles);
+            // password
+            String password = (String)jws.getBody().get("password");
+
+            return new AppUser(appUserId, username, password, password, false, roles);
 
         } catch (JwtException e) {
             // 5. JWT failures are modeled as exceptions.

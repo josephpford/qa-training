@@ -4,11 +4,11 @@
 @baseurl = http://{{host}}/api
 
 # Use the auth endpoint to get a valid token
-@token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0b2RvcyIsInN1YiI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjEsInJvbGVzIjoiQURNSU4iLCJleHAiOjE2NTYyODIwMzF9.2KI5z83v2b0PVIVacLtAtMl2AOmVxqCxD81LZ8freOE
+@token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0b2RvcyIsInN1YiI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjEsInJvbGVzIjoiQURNSU4iLCJwYXNzd29yZCI6InBhc3N3b3JkIiwiZXhwIjoxNjU2MzIwODA2fQ.h01iLYqZU9mykv1v7bjDrR0pzoOnFGhPfHzNqqOm8R4
 
 ### Should return a 200 status code with todos in the response body
 
-GET {{baseurl}}/todos HTTP/1.1
+GET {{baseurl}}/todos/1/incomplete HTTP/1.1
 Authorization: Bearer {{token}}
 
 ### Should return a 200 status code with a single todo in the response body
@@ -19,11 +19,6 @@ Authorization: Bearer {{token}}
 ### Should return a 404 status code
 
 GET {{baseurl}}/todos/99999 HTTP/1.1
-Authorization: Bearer {{token}}
-
-### Should return a 404 status code when requesting an existing todo ID that doesn't belong to the current user
-
-GET {{baseurl}}/todos/6 HTTP/1.1
 Authorization: Bearer {{token}}
 
 ### Should return a 400 status code with an error message
@@ -47,6 +42,7 @@ Content-Type: application/json
 Authorization: Bearer {{token}}
 
 {
+    "appUserId": 1,
     "description": "New todo."
 }
 
@@ -58,17 +54,7 @@ Authorization: Bearer {{token}}
 
 {
     "id": 2,
-    "description": "Updated todo."
-}
-
-### Should return a 404 status code when attempting to update a todo that doesn't belong to the current user
-
-PUT {{baseurl}}/todos/6 HTTP/1.1
-Content-Type: application/json
-Authorization: Bearer {{token}}
-
-{
-    "id": 6,
+    "appUserId": 1,
     "description": "Updated todo."
 }
 
@@ -98,12 +84,6 @@ Authorization: Bearer {{token}}
     "id": 1,
     "description": "Updated todo."
 }
-
-### Should return a 404 status code when attempting to delete a todo that doesn't belong to the current user
-
-DELETE {{baseurl}}/todos/6 HTTP/1.1
-Content-Type: application/json
-Authorization: Bearer {{token}}
 
 ### Should return a 404 status code when attempting to delete a todo that doesn't exist
 

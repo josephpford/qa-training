@@ -7,6 +7,8 @@ import org.springframework.web.HttpMediaTypeNotSupportedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import java.util.Arrays;
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
@@ -18,7 +20,7 @@ public class GlobalExceptionHandler {
         }
 
         return ErrorResponse.build(
-                "Something went wrong on our end. Your request failed. :(",
+                String.format("Message: %s, Stack Trace: %s", ex.getMessage(), Arrays.toString(ex.getStackTrace())),
                 HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

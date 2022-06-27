@@ -7,7 +7,7 @@ import java.util.List;
 public interface ToDoRepository {
     List<ToDo> findByAppUserId(int appUserId, boolean isCompleted);
 
-    ToDo findByIdAndAppUserId(int toDoId, int appUserId);
+    ToDo findById(int toDoId);
 
     ToDo create(ToDo toDo);
 
