@@ -148,7 +148,7 @@ On the next page, click the "Generate a new client secret" button and copy the "
 * Add a file named `application.properties` to the `resources` directory
 * Add the following content to the `application.properties` file:
 
-**application.properties**
+**resources/application.properties**
 
 ```
 spring.security.oauth2.client.registration.github.clientId=${GH_CLIENT_ID}
@@ -243,7 +243,7 @@ Start with adding a controller to define:
 * An endpoint to retrieve all of the authenticated user's information
 * An endpoint to retrieve the authenticated user's name
 
-**UserController.java**
+**controllers/UserController.java**
 
 ```java
 @RestController
@@ -286,7 +286,7 @@ _Run the application. After authenticating using GitHub, open another browser ta
 
 With the API endpoints in place, you can update the `index.html` page to dynamically render content:
 
-**index.html**
+**resources/static/index.html**
 
 ```html
 <h1>OIDC Demo</h1>
@@ -299,7 +299,7 @@ With the API endpoints in place, you can update the `index.html` page to dynamic
 <script src="/js/main.js"></script>
 ```
 
-**js/main.js**
+**resources/static/js/main.js**
 
 ```js
 const unauthenticatedDiv = document.getElementById('unauthenticated');
@@ -354,6 +354,8 @@ The `authenticationEntryPoint()` method is used to configure Spring Security to 
 
 By default, Spring Security will direct to the last failed request which was our request to the `main.js` file. We need to redirect to `index.html`...
 
+**security/SecurityConfig.java**
+
 ```java
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -393,6 +395,8 @@ In the popup window, copy the "Client ID" and "Client Secret" values to a secure
 
 Add the following lines to the `application.properties` file:
 
+**resources/application.properties**
+
 ```
 spring.security.oauth2.client.registration.google.clientId=${GOOGLE_CLIENT_ID}
 spring.security.oauth2.client.registration.google.clientSecret=${GOOGLE_CLIENT_SECRET}
@@ -405,6 +409,8 @@ Use the IntelliJ "Run > Edit Configurations..." menu option to configure the `GO
 #### Update the `index.html` Page
 
 And finally, update the `index.html` page:
+
+**resources/static/index.html**
 
 ```html
 <div id="unauthenticated">
@@ -420,3 +426,108 @@ And finally, update the `index.html` page:
 #### Testing
 
 _Run the application. Click the link to authenticate using Google. After the authentication process completes, you'll see your name displayed on the `index.html` page._
+
+### 5. Logout
+
+You can also give your users a way to explicitly logout of your application.
+
+#### Logout Endpoint
+
+Start with adding a new endpoint to the `UserController` class:
+
+**controllers/UserController.java**
+
+```java
+@DeleteMapping("/logout")
+public ResponseEntity<?> logout(HttpServletRequest request) {
+    try {
+        request.logout();
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    } catch (ServletException e) {
+        e.printStackTrace();
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    }
+}
+```
+
+The [`HttpServletRequest`](https://tomcat.apache.org/tomcat-7.0-doc/servletapi/javax/servlet/http/HttpServletRequest.html) type defines a method named `logout()` that we can call to remove any authenticated user from the request. Calling this method removes the user's session on the server.
+
+#### Disable CSRF Protection for All API Endpoints
+
+By default, Spring Security requires a CSRF (cross-site request forgery) token for all `POST` requests. This interferes with being able to use `fetch` from the browser to make `POST` requests. To resolve this issue, you can update the security configuration to disable CSRF protection on all API endpoints:
+
+**security/SecurityConfig.java**
+
+```java
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+                // new!
+                .csrf()
+                        .ignoringAntMatchers("/api/**").and()
+                .authorizeRequests(a -> a
+                        .antMatchers("/", "/error").permitAll()
+                        .anyRequest().authenticated()
+                )
+                .exceptionHandling(e -> e
+                        .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
+                )
+                .oauth2Login()
+                        .defaultSuccessUrl("/", true);
+    }
+}
+```
+
+#### Add Logout Button
+
+Update the `index.html` page:
+
+**resources/static/index.html**
+
+```html
+<div id="authenticated" style="display:none">
+    <p>Logged in as: <span id="user"></span></p>
+    <p><button id="logout">Logout</button></p>
+</div>
+```
+
+And finally, update the `main.js` file to get a reference to the `<button>` element and define a click handler for it:
+
+**resources/static/js/main.js**
+
+```js
+const unauthenticatedDiv = document.getElementById('unauthenticated');
+const authenticatedDiv = document.getElementById('authenticated');
+const userNameSpan = document.getElementById('user');
+// new!
+const logoutButton = document.getElementById('logout');
+
+async function getUserName() {
+  const response = await fetch('/api/user/name');
+  const data = await response.json();
+
+  if (data.name) {
+    authenticatedDiv.style.display = 'block';
+    unauthenticatedDiv.style.display = 'none';
+    userNameSpan.innerHTML = data.name;
+
+    // new!
+    logoutButton.addEventListener('click', async () => {
+        const response = await fetch('/api/user/logout', { method: 'DELETE' });
+        if (response.status === 204) {
+            window.location = '/';
+        } else {
+            console.log(`Unexpected status code: ${response.status}`);
+        }
+    });
+  }
+}
+
+getUserName();
+```
+
+#### Testing
+
+_Run the application. Click one of the links to authenticate. You should see your name displayed on the `index.html` page. Click the "Logout" button. You should now be logged out._

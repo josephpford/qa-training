@@ -11,6 +11,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .csrf()
+                        .ignoringAntMatchers("/api/**").and()
                 .authorizeRequests(a -> a
                         .antMatchers("/", "/error").permitAll()
                         .anyRequest().authenticated()
@@ -19,6 +21,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
                 )
                 .oauth2Login()
-                    .defaultSuccessUrl("/", true);
+                        .defaultSuccessUrl("/", true);
     }
 }
