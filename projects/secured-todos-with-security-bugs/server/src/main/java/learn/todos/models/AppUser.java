@@ -1,0 +1,71 @@
+package learn.todos.models;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.util.Assert;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class AppUser extends User {
+    private static final String AUTHORITY_PREFIX = "ROLE_";
+
+    private int appUserId;
+    private String originalPassword;
+
+    public AppUser(int appUserId, String username, String password, String hashedPassword, boolean disabled, List<String> roles) {
+        super(username, hashedPassword, !disabled,
+                true, true, true,
+                convertRolesToAuthorities(roles));
+        this.appUserId = appUserId;
+        this.originalPassword = password;
+    }
+
+    // TODO remove these constructor overloads?
+
+//    public AppUser(String username, String password,
+//                   Collection<? extends GrantedAuthority> authorities) {
+//        super(username, password, authorities);
+//    }
+//
+//    public AppUser(String username, String password, boolean enabled,
+//                   boolean accountNonExpired, boolean credentialsNonExpired, boolean accountNonLocked,
+//                   Collection<? extends GrantedAuthority> authorities) {
+//        super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, authorities);
+//    }
+
+    public int getAppUserId() {
+        return appUserId;
+    }
+
+    public void setAppUserId(int appUserId) {
+        this.appUserId = appUserId;
+    }
+
+    public String getOriginalPassword() {
+        return originalPassword;
+    }
+
+    public void setOriginalPassword(String originalPassword) {
+        this.originalPassword = originalPassword;
+    }
+
+    public static List<GrantedAuthority> convertRolesToAuthorities(List<String> roles) {
+        List<GrantedAuthority> authorities = new ArrayList<>(roles.size());
+        for (String role : roles) {
+            Assert.isTrue(!role.startsWith(AUTHORITY_PREFIX),
+                    () -> String.format("%s cannot start with %s (it is automatically added)", role, AUTHORITY_PREFIX));
+            authorities.add(new SimpleGrantedAuthority(AUTHORITY_PREFIX + role));
+        }
+        return authorities;
+    }
+
+    public static List<String> convertAuthoritiesToRoles(Collection<GrantedAuthority> authorities) {
+        return authorities.stream()
+                .map(a -> a.getAuthority().substring(AUTHORITY_PREFIX.length()))
+                .collect(Collectors.toList());
+    }
+}
