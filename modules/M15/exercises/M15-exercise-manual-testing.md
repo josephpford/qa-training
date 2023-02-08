@@ -5,7 +5,7 @@ In this exercise, you will review requirements for the Field Agent UI, then crea
 ## Step 1: Prepare the test environment
 
 - Open the `react-field-agent-solution/server/` folder in IntelliJ as a Maven project and run the SpringBootApplication (App)
-  - You probably have to add this to your Run Configuration: `FIELD_AGENT_DB_USERNAME=root; FIELD_AGENT_DB_PASSWORD=passwd`
+  - You will probably need to add this to your Run Configuration: `FIELD_AGENT_DB_USERNAME=root; FIELD_AGENT_DB_PASSWORD=passwd`
 - Start MySQL, then open `react-field-agent-solution/server/sql/field-agent-schema-prod.sql` in MySQL Workbench and run it
 - Open a Terminal and in `react-field-agent-solution/client/` execute `npm install` and `npm run` 
 - Open a browser and navigate to http://localhost:3000/
@@ -13,17 +13,17 @@ In this exercise, you will review requirements for the Field Agent UI, then crea
 ## Step 2: Review Field Agent UI Requirements
 ### Main UI
 - Displays all agents
-- Each agent should display: Last name, First Name, Birthday, Edit and Delete buttons
-- Agents should be sorted by last name, then first name, then birthday
-- If birthday is not known, display "unknown"
+- Each agent should display: Last Name, First Name, Birthday, Edit and Delete buttons
+- Agents should be sorted by Last Name, then First Name, then Birthday
+- If Birthday is not known, display "unknown"
 
 ### Add/Edit
-- First name is required
-- Middle name is optional
-- Last name is required
+- First Name is required
+- Middle Name is optional
+- Last Name is required
 - Birthday is optional, but if provided, agents must be at least 16 years old.
 - Height in inches is optional, but if provided must be between 36 and 96 inches
-- First, middle and last name combinations must be unique.
+- First, Middle and Last name combinations must be unique.
 
 ### Delete
 - Must be able to delete any agent.

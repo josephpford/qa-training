@@ -70,11 +70,11 @@ Defects follow a company or team-defined defect tracking flow. Usually something
 
 ## Defect Tracking
 
-Some Teams decide to not allow any code to be released when there are known defects. Other teams, depending on the severity of the defect, will allow the code to be released despite known defects. Some teams hold periodic Defect Tracking Meetings where some or all of the known existing defects will be discussed and either slotted for fixing in a future release, marked as "Closed Won't Fix" for various reasons, etc. Usually the Test Lead or QA Analyst on the team holds these meetings and invites key members of the team, including engineering leads, product / business owners, and project managers. Writing succinct, sufficiently detailed titles are especially helpful in these meetings. Information to include in Defect Tracking Meetings include Bug ID, Title, Status, Severity/Priority, Environment, Version Found, Version Fixed, Reported By, Assigned To, etc.
+Some Teams decide to not allow any code to be released when there are known defects. Other teams (depending on the severity of the defect) will allow the code to be released, despite known defects. Some teams hold periodic Defect Tracking Meetings where some or all of the known existing defects will be discussed and either slotted for fixing in a future release, marked as "Closed Won't Fix" for various reasons, etc. Usually the Test Lead or QA Analyst on the team holds these meetings and invites key members of the team, including engineering leads, product / business owners, and project managers. Writing succinct, sufficiently detailed titles is especially helpful for these meetings. Information to provide in Defect Tracking Meetings includes Bug ID, Title, Status, Severity/Priority, Environment, Version Found, Version Fixed, Reported By, Assigned To, etc.
 
 ## Summary
 
-Defects are deviations to expected results. Defect Reports (aka Defects, Bugs) are opened in Defect Tracking Tools to help track the resolution of these defects. Some teams choose to fix all defects before releasing code to production, some teams have defect triage meetings where they decide which defects are worth fixing and which defects can be ignored/delayed.
+Defects are deviations from expected results. Defect Reports (aka Defects, Bugs) are opened in Defect Tracking Tools to help track the resolution of these defects. Some teams choose to fix all defects before releasing code to production, some teams have defect triage meetings where they decide which defects are worth fixing and which defects can be ignored/delayed.
 
 This concludes the introduction to Manual Testing. Manual Testing is comprised of Test Planning, Test Case Creation and Execution and Defects. 
 
