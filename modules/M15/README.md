@@ -31,7 +31,7 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 - [OAuth 2.0 Authorization Code Flow](./lessons/M15-oauth.md)
 
 ### Exercises
-- [Explore common attack vectors](./exercises/M15-exercise-common-attack-vectors.md)
+- [Security Bug Hunt](./exercises/M15-exercise-security-bug-hunt.md)
 - [Implement User Authentication Using OpenID Connect (OIDC)](./exercises/M15-exercise-openid-connect.md)
 
 ## Day 2 - Quality Engineering Overview
