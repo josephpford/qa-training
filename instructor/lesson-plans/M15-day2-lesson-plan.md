@@ -1,63 +1,44 @@
-# Day 2 - Quality Engineering Overview Lesson Plan
+# Day 2 - Functional Test Automation Lesson Plan
 
 MORNING
 
-Lecture: 5 minutes
-  - Introduce Teachers
-  - Lecture, reading, hands-on exercises
-  - Field Agent
-    - Implement User Authentication Using OpenID Connect (OIDC)
-    - Create Manual Test Cases
-    - Create Defects
-    - Create Automated Test Cases
-    - Create Performance Test Script
+Lecture: 15 minutes
+  - [Introduction to Test Automation](../../lessons/M15-introduction-to-test-automation.md)
+  - [Introduction to Selenium](../../lessons/M15-introduction-to-selenium.md)
 
-Reading: 30 minutes
-  - [Introduction to Quality Engineering](../../lessons/M15-introduction-to-quality-engineering.md)
-    - [Introduction to Defects](../../lessons/M15-introduction-to-defects.md)
-    - [QA vs QM vs QE](../../lessons/M15-qa-qm-qe.md)
-    - [Software Development Methodologies](../../lessons/M15-software-development-methodologies.md)
-    - [Test Strategies and Levels](../../lessons/M15-test-strategies-and-levels.md)
-    - [Careers in Quality Engineering](../../lessons/M15-careers-in-quality-engineering.md)
-  - [Quality Engineering Summary](../../lessons/M15-qe-overview-summary.md)
+Read: 15 minutes
+  - [Components Overview](https://www.selenium.dev/documentation/overview/components/)
+  - [Page Object Models](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/)
 
-Finish Introduction Exercises in pairs/groups (15 minutes)
-- [Introduction Exercises](../../exercises/M15-exercise-introduction-to-quality-engineering.md)
-
-Review Introduction Exercises as a Big Group (15 minutes)
-- [Introduction Exercises](../../exercises/M15-exercise-introduction-to-quality-engineering.md)
+I Do / We Do Part 1 Installation: 30 minutes
+  - [Automation Part 1](../../exercises/M15-exercise-automated-testing-part1.md)
 
 BREAK
 
-Reading: 30 minutes
-  - [Lesson: Manual Testing](../../lessons/M15-manual-testing.md)
-  - [Lesson: Defects Part 2](../../lessons/M15-defects-part-2.md)
-
-Introduce [Manual Testing and Defect Exercise](../../exercises/M15-exercise-manual-testing.md): 5 minutes
-
-I Do / We Do Setup Development Environment: 30 minutes
+I Do / We Do Part 2: Record and Playback, Export to Java: 90 minutes
+  - [Automation Part 2](../../exercises/M15-exercise-automated-testing-part2.md)
 
 LUNCH
 
-I Do / We Do Review Requirements and Create Test Cases: 90 minutes
+I Do / We Do Part 2: Record and Playback, Export to Java: 90 minutes
+  - [Automation Part 2](../../exercises/M15-exercise-automated-testing-part2.md)
 
 BREAK
 
-I Do / We Do Test Case Execution: 90 minutes
+I Do / We Do Part 3: Keyword Driven - Parameterized: 90 minutes
+  - [Automation Part 3](../../exercises/M15-exercise-automated-testing-part3.md)
 
---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
-### Quality Engineering Overview
-- [Introduction to Quality Engineering](../../lessons/M15-introduction-to-quality-engineering.md)
-  - [Introduction to Defects](../../lessons/M15-introduction-to-defects.md)
-  - [QA vs QM vs QE](../../lessons/M15-qa-qm-qe.md)
-  - [Software Development Methodologies](../../lessons/M15-software-development-methodologies.md)
-  - [Test Strategies and Levels](../../lessons/M15-test-strategies-and-levels.md)
-  - [Careers in Quality Engineering](../../lessons/M15-careers-in-quality-engineering.md)
-- [Quality Engineering Summary](../../lessons/M15-qe-overview-summary.md)
-- [Introduction Exercises](../../exercises/M15-exercise-introduction-to-quality-engineering.md)
+## Day 3 - Functional Test Automation
 
-### Manual Testing and Defects Part 2
-- [Manual Test Cases](../../lessons/M15-manual-testing.md)
-- [Defects Part 2](../../lessons/M15-defects-part-2.md)
-- [Manual Testing and Defect Exercise](../../exercises/M15-exercise-manual-testing.md)
+### Lessons
+- [Introduction to Test Automation](../../lessons/M15-introduction-to-test-automation.md)
+- [Testing Automation Tools](../../lessons/M15-test-automation-tools.md)
+- [Test Automation Frameworks](../../lessons/M15-test-automation-tools.md)
+- [Introduction to Selenium](../../lessons/M15-introduction-to-selenium.md)
+
+### Exercises
+- [Automated Testing with Selenium Part 1](../../exercises/M15-exercise-automated-testing-part1.md)
+- [Automated Testing with Selenium Part 2](../../exercises/M15-exercise-automated-testing-part2.md)
+- [Automated Testing with Selenium Part 3](../../exercises/M15-exercise-automated-testing-part3.md)

@@ -1,44 +1,36 @@
-# Day 3 - Functional Test Automation Lesson Plan
+# Day 3 - Performance Test Automation Lesson Plan
 
 MORNING
 
-Lecture: 15 minutes
-  - [Introduction to Test Automation](../../lessons/M15-introduction-to-test-automation.md)
-  - [Introduction to Selenium](../../lessons/M15-introduction-to-selenium.md)
+Reading: 30 minutes
+  - [Introduction to Performance Testing](../../lessons/M15-introduction-to-performance-testing.md)
 
-Read: 15 minutes
-  - [Components Overview](https://www.selenium.dev/documentation/overview/components/)
-  - [Page Object Models](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/)
-
-I Do / We Do Part 1 Installation: 30 minutes
-  - [Automation Part 1](../../exercises/M15-exercise-automated-testing-part1.md)
+JMeter Installation: 30 minutes
+  - [Introduction to Apache JMeter](../../lessons/M15-introduction-to-apache-jmeter.md)
 
 BREAK
 
-I Do / We Do Part 2: Record and Playback, Export to Java: 90 minutes
-  - [Automation Part 2](../../exercises/M15-exercise-automated-testing-part2.md)
+Introduce [Performance Testing with Apache JMeter](../../exercises/M15-exercise-performance-testing.md)
+
+I Do / We Do "Create Performance Test Script": 30 minutes
+
+I Do / We Do "Implement High Level Test Plan": 30 minutes
 
 LUNCH
 
-I Do / We Do Part 2: Record and Playback, Export to Java: 90 minutes
-  - [Automation Part 2](../../exercises/M15-exercise-automated-testing-part2.md)
+I Do / We Do "Add HTTP Header Manager and JSON Extractor" & "Ignore expected 404 errors": 30 minutes
+
+I Do / We Do "Extract Test Data to CSV" & "Add Additional Listeners": 30 minutes
 
 BREAK
 
-I Do / We Do Part 3: Keyword Driven - Parameterized: 90 minutes
-  - [Automation Part 3](../../exercises/M15-exercise-automated-testing-part3.md)
 
--------------------------------------------------------------------------------------------------------------------
-
-## Day 3 - Functional Test Automation
+------------------------------------------------------------------------------------------
 
 ### Lessons
-- [Introduction to Test Automation](../../lessons/M15-introduction-to-test-automation.md)
-- [Testing Automation Tools](../../lessons/M15-test-automation-tools.md)
-- [Test Automation Frameworks](../../lessons/M15-test-automation-tools.md)
-- [Introduction to Selenium](../../lessons/M15-introduction-to-selenium.md)
+- [Introduction to Performance Testing](../../lessons/M15-introduction-to-performance-testing.md)
+- [Performance Testing Tools / Technologies](../../lessons/M15-performance-testing-tools.md)
+- [Introduction to Apache JMeter](../../lessons/M15-introduction-to-apache-jmeter.md)
 
 ### Exercises
-- [Automated Testing with Selenium Part 1](../../exercises/M15-exercise-automated-testing-part1.md)
-- [Automated Testing with Selenium Part 2](../../exercises/M15-exercise-automated-testing-part2.md)
-- [Automated Testing with Selenium Part 3](../../exercises/M15-exercise-automated-testing-part3.md)
+- [Performance Testing with Apache JMeter](../../exercises/M15-exercise-performance-testing.md)

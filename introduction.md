@@ -2,11 +2,9 @@
 
 * Instructor introductions
 * Overview of the week
-  * Monday: Application Security
-  * Tuesday: Federated Identity
-  * Wednesday: Quality Engineering Overview
-  * Thursday: Functional Test Automation
-  * Friday: Performance Test Automation
+  * Day 1: Quality Engineering Overview
+  * Day 2: Functional Test Automation
+  * Day 3: Performance Test Automation
 * Homework expectations
 * Schedule for today
 * GitHub

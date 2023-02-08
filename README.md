@@ -1,12 +1,11 @@
 # Module 15 Overview
 
 ## Goal
-Deliver 1 week of Security and Software Development Engineer in Test (SDET) training to Dev10 trainees. Provide an awareness of Security and Quality Management practices, tools, and concepts and apply some of the learnings by securing and testing a sample application.
+Provide an awareness of Quality Management practices, tools, and concepts and apply some of the learnings by testing a sample application.
 
 ## Assessment
 
-- Provide Students with Application to be Secured and Tested
-- Implement User Authentication Using OpenID Connect (OIDC)
+- Provide Students with Application to be Tested
 - Create Manual Test Cases
 - Create Defects
 - Create Automated Test Cases
@@ -17,24 +16,11 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 
 - Mornings: Introduce concepts to trainees
 - Afternoons: Apply new concepts by creating the following for a sample application
-  - Implement OpenID Connect (OIDC)
   - Create Manual Test Cases
   - Automate Test Cases using Java / JUnit / Selenium
   - Create Performance Test scripts using Apache JMeter and drive with CSV
 
-## Day 1 - Security
-
-### Lessons
-- [Application Security](./lessons/M15-application-security.md)
-- [Security for Developers](./lessons/M15-security-for-developers.md)
-- [Federated Identity](./lessons/M15-federated-identity.md)
-- [OAuth 2.0 Authorization Code Flow](./lessons/M15-oauth.md)
-
-### Exercises
-- [Security Bug Hunt](./exercises/M15-exercise-security-bug-hunt.md)
-- [Implement User Authentication Using OpenID Connect (OIDC)](./exercises/M15-exercise-openid-connect.md)
-
-## Day 2 - Quality Engineering Overview
+## Day 1 - Quality Engineering Overview
 
 ### Quality Engineering Overview
 - [Introduction to Quality Engineering](./lessons/M15-introduction-to-quality-engineering.md)
@@ -51,7 +37,7 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 - [Defects Part 2](./lessons/M15-defects-part-2.md)
 - [Manual Testing and Defect Exercise](./exercises/M15-exercise-manual-testing.md)
 
-## Day 3 - Functional Test Automation
+## Day 2 - Functional Test Automation
 
 ### Lessons
 - [Introduction to Test Automation](./lessons/M15-introduction-to-test-automation.md)
@@ -64,7 +50,7 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 - [Automated Testing with Selenium Part 2](./exercises/M15-exercise-automated-testing-part2.md)
 - [Automated Testing with Selenium Part 3](./exercises/M15-exercise-automated-testing-part3.md)
 
-## Day 4 - Performance Test Automation
+## Day 3 - Performance Test Automation
 
 ### Lessons
 - [Introduction to Performance Testing](./lessons/M15-introduction-to-performance-testing.md)
@@ -74,10 +60,8 @@ Deliver 1 week of Security and Software Development Engineer in Test (SDET) trai
 ### Exercises
 - [Performance Testing with Apache JMeter](./exercises/M15-exercise-performance-testing.md)
 
-## Day 5 - Wrap Up and Prime Therapeutics Overview
+## Day 3 - Wrap Up
 
 ### Wrap Up
 - High level overview of the week’s content
 - Answer any outstanding questions
-### Prime Therapeutics Overview
-- Content to be created and delivered by Prime
