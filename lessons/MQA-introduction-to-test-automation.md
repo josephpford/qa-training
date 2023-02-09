@@ -14,25 +14,25 @@ When you've finished this lesson and its exercises, you should:
 
 ## What is Automated Testing
 
-Automated Testing is any software used to test other software. It is a combination of (virtual) user actions to perform and validations of the system outputs. For example, a simple Automation Test may launch a browser, navigate to a particular webpage, fill out and submit a form, then verify the application displays the expected result. Typically Automated Testing works by exercising the application as an end-user would, or emulating an end-user by making API calls. After performing actions, frequently automation tests will perform validations by inspecting the UI, making API calls or database queries.  
+Automated Testing is any software used to test other software. It is a combination of (virtual) user actions to perform and validations of the system outputs. For example, a simple Automation Test may launch a browser, navigate to a particular webpage, fill out and submit a form, then verify the application displays the expected result. Typically Automated Testing works by exercising the application as an end-user would, or emulating an end-user by making API calls. After performing actions, frequently automation tests will perform validations by inspecting the UI, making API calls or database queries. 
 
 In the case of Desktop Applications, Automated Testing may launch programs, move and click the mouse, type characters into text boxes, and compare bitmap images of expected and actual results on the screen. 
 
 In the case of Browser applications, Automated Tests will launch a browser and interact with a web application. You can also spin up "headless" browsers. For Mobile Application Testing, there are emulators that are used for testing the application, but there are also companies that specialize in hosting automated testing services that have actual devices exercised as part of the automation. 
 
-An Automated API Test may make HTTP requests and verify expected results by inspecting the HTTP response code and the response body.  
+An Automated API Test may make HTTP requests and verify expected results by inspecting the HTTP response code and the response body. 
 
-Automated Testing speeds up the software development lifecycle by having a collection of repeatable tests that can be executed quickly and reliably.  
+Automated Testing speeds up the software development lifecycle by having a collection of repeatable tests that can be executed quickly and reliably. 
 
-Sauce Labs has an [excellent article](https://saucelabs.com/resources/topics/automated-testing) explaining what Automated Testing is all about.  
+Sauce Labs has an [excellent article](https://saucelabs.com/resources/topics/automated-testing) explaining what Automated Testing is all about. 
 
 ## Benefits and Drawbacks of Test Automation
 
-Test Automation excels at performing highly repetitive, data intensive testing where expected outcomes are known. Mature applications with frequent incremental changes benefit from a comprehensive Test Automation Suite because they will get executed over and over and won't have to change significantly from release to release. Test Automation takes the burden off humans for repetitive tasks.  
+Test Automation excels at performing highly repetitive, data intensive testing where expected outcomes are known. Mature applications with frequent incremental changes benefit from a comprehensive Test Automation Suite because they will get executed over and over and won't have to change significantly from release to release. Test Automation takes the burden off humans for repetitive tasks. 
 
-Keeping Test Automation up to date with the System Under Test is necessary for the automated tests to function properly, so automated testing can be challenging to implement for an immature application because frequent changes to the system under test will force the automated tests to change as well. Following The [Test Pyramid metaphor](https://martinfowler.com/articles/practical-test-pyramid.html) can help focus efforts so that tests do not need to change as often.  
+Keeping Test Automation up to date with the System Under Test is necessary for the automated tests to function properly, so automated testing can be challenging to implement for an immature application because frequent changes to the system under test will force the automated tests to change as well. Following The [Test Pyramid metaphor](https://martinfowler.com/articles/practical-test-pyramid.html) can help focus efforts so that tests do not need to change as often. 
 
-Test Automation is software itself, so it should also be written following [SOLID](https://en.wikipedia.org/wiki/SOLID) design principles. Historically Test Automation was written by test analysts, not experienced software engineers. This is rapidly changing as the industry recognizes the importance and benefits of test automation and the focus is moving from Quality Assurance to Quality Engineering.   
+Test Automation is software itself, so it should also be written following [SOLID](https://en.wikipedia.org/wiki/SOLID) design principles. Historically Test Automation was written by test analysts, not experienced software engineers. This is rapidly changing as the industry recognizes the importance and benefits of test automation and the focus is moving from Quality Assurance to Quality Engineering.
 
 ## Summary
 

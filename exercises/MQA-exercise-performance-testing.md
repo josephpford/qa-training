@@ -61,7 +61,7 @@ Next let's implement our Test Plan at a high-level.
   - Get 1 Agent which results in 404
     - GET http://localhost:8080/api/agent/n
 
-`HTTP Request Defaults` can be used so that `server name`, `port number`, `content encoding` don't need to be specified in each `HTTP Request`.  Add a new `HTTP Request` for each action in our test plan.
+`HTTP Request Defaults` can be used so that `server name`, `port number`, `content encoding` don't need to be specified in each `HTTP Request`. Add a new `HTTP Request` for each action in our test plan.
 
 ```
 Test Plan
@@ -177,7 +177,7 @@ Save it. Click Clear, and then Click Play. Look at the View Results Tree. The te
 
 ## Extract Test Data to CSV
 
-Now let's use an external data file to drive variations in our test.  Create a file `data_file.csv` in the exact same folder as your Test Plan (should be the assessment folder).
+Now let's use an external data file to drive variations in our test. Create a file `data_file.csv` in the exact same folder as your Test Plan (should be the assessment folder).
 
 ```
 firstName,middleName,lastName,dob,heightInInches

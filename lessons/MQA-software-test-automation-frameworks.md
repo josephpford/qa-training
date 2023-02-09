@@ -62,7 +62,7 @@ runAddAgentTest("Bob", "Johnson", "", "DOB is required.");
 runAddAgentTest("Bob", "Johnson", "01/01/2022", "Agent must be at least 18 years old.");
 ```
 
-Note that there will be completely different groups of test cases that don't follow the same steps as runAddAgentTest (e.g. runDeleteAgentTest, runEditAgentTest, etc). Each of these groups of test cases can be automated as one test case (as a Java method) that takes different input and expected results.  
+Note that there will be completely different groups of test cases that don't follow the same steps as runAddAgentTest (e.g. runDeleteAgentTest, runEditAgentTest, etc). Each of these groups of test cases can be automated as one test case (as a Java method) that takes different input and expected results. 
 
 #### Keyword Driven (Externalized Test Data)
 

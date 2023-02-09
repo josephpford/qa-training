@@ -32,7 +32,7 @@ Provide an awareness of Quality Engineer in Test practices, tools, and concepts 
 - [Quality Engineering Summary](./lessons/MQA-qe-overview-summary.md)
 - [Introduction Exercises](./exercises/MQA-exercise-introduction-to-quality-engineering.md)
 
-### Manual Testing and Defects Part 2
+### Manual Testing and Defects
 - [Manual Test Cases](./lessons/MQA-manual-testing.md)
 - [Defects Part 2](./lessons/MQA-defects-part-2.md)
 - [Manual Testing and Defect Exercise](./exercises/MQA-exercise-manual-testing.md)

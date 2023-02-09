@@ -257,7 +257,7 @@ Inspect the code that was recorded by your script. You can try to clean up the c
 
 It is possible that you will have to add waits to your code so that Java/Selenium will slow down to allow your browser/server to do their work. You can do that in lots of smart dynamic ways. For now, you can add a `Thread.sleep(100);` to your code if necessary.
 
-Before moving to the next section, please ensure your test cases Adds and Deletes an agent and also verifies text on the main screen and on the delete confirmation screen.  If you get stuck, you can copy/paste this solution so that you can continue with the rest of the lesson.
+Before moving to the next section, please ensure your test cases Adds and Deletes an agent and also verifies text on the main screen and on the delete confirmation screen. If you get stuck, you can copy/paste this solution so that you can continue with the rest of the lesson.
 
 ```
 import io.github.bonigarcia.wdm.WebDriverManager;
