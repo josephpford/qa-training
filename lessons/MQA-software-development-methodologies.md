@@ -43,4 +43,4 @@ Testing a product that is developed using the Agile methodology has similarities
 Because a lot of projects are moving towards a more Agile development methodology, and because automated testing is so important for the success of an Agile project, companies are starting to blend the roles of QA and Development. This is the primary focus of QE.
 
 ## Next:
-[Test Strategies and Levels](./M15-test-strategies-and-levels.md)
+[Test Strategies and Levels](./MQA-test-strategies-and-levels.md)

@@ -1,7 +1,7 @@
 # Automated Testing with Selenium
 
 ## Part 2: Record and Playback
-1. If you haven't already, follow the steps in [M15-exercise-manual-testing.md](./M15-exercise-manual-testing.md) to "Prepare the test environment"
+1. If you haven't already, follow the steps in [MQA-exercise-manual-testing.md](./MQA-exercise-manual-testing.md) to "Prepare the test environment"
 2. Open Chrome, then open the Selenium IDE extension
 
 ![Selenium IDE](../assets/selenium-ide.png)
@@ -24,7 +24,7 @@
 ## Part 3: Export to Java
 
 8. Right Click on the test name and select Export. Choose Java / JUnit and leave all the other options default. Save it anywhere on your computer. Don't close the Selenium IDE or new Browser Window it opened quite yet.
-9. Create a new blank Java Maven project in IntelliJ in M15/assessment/field-agent-tests
+9. Create a new blank Java Maven project in IntelliJ in MQA/assessment/field-agent-tests
 10. Add the following dependencies in your pom.xml and rebuild the project. 
 
 ```
@@ -324,4 +324,4 @@ public class AddThenDeleteAgentTest {
 ```
 
 Next
-[Part 3](./M15-exercise-automated-testing-part3.md)
+[Part 3](./MQA-exercise-automated-testing-part3.md)

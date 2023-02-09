@@ -71,4 +71,4 @@ Test Runs are also a way to capture the current state of the test case when the 
 Test Plans describe the testing techniques that will be used during the various phases of the project and who will be performing that testing. Test Cases describe actual steps and expected results that will be taken for testing the system. There are various ways to create Test Cases from requirements, and Pairwise Testing can help reduce the number of test cases needed to test all requirements. Traceability matrices help map test cases back to requirements. Test Cases can be grouped together into various Test Suites and Test Suites are executed multiple times in Test Runs.
 
 ## Next
-[Defects Part 2](./M15-defects-part-2.md)
+[Defects Part 2](./MQA-defects-part-2.md)

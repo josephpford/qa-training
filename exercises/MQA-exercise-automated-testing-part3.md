@@ -170,7 +170,7 @@ public class AgentTests {
 }
 ```
 
-Note that while recording, you may have seen "N/A" for any fields that were not filled in, but the [Requirements](../exercises/M15-exercise-manual-testing.md) stated that "unknown" should be displayed. Frequently while Recording automation, users will forget that the Application Under Test is NOT the source of truth, rather the requirements are. It is important to go back to your requirements from time to time to make sure you are automating for what the application should display, not what the application is actually displaying.
+Note that while recording, you may have seen "N/A" for any fields that were not filled in, but the [Requirements](../exercises/MQA-exercise-manual-testing.md) stated that "unknown" should be displayed. Frequently while Recording automation, users will forget that the Application Under Test is NOT the source of truth, rather the requirements are. It is important to go back to your requirements from time to time to make sure you are automating for what the application should display, not what the application is actually displaying.
 
 ## Summary
 

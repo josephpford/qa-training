@@ -58,4 +58,4 @@ Mac/Linux:
 ```
 
 ## Next
-[Exercise - Performance Test Field Agent API](../exercises/M15-exercise-performance-testing.md)
+[Exercise - Performance Test Field Agent API](../exercises/MQA-exercise-performance-testing.md)

@@ -24,4 +24,4 @@ There are lots of studies and articles that show defects found early in the soft
 ![Relative Costs to Fix Software Defects](../assets/defect_costs.png)
 
 ## Next:
-[QA vs QM vs QE](./M15-qa-qm-qe.md)
+[QA vs QM vs QE](./MQA-qa-qm-qe.md)

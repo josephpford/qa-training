@@ -18,4 +18,4 @@ There are also many open source Performance Test Automation tools, and again ins
   - Prometheus is an open-source systems monitoring and alerting toolkit
 
 ## Next
-[Introduction to Apache JMeter](./M15-introduction-to-apache-jmeter.md)
+[Introduction to Apache JMeter](./MQA-introduction-to-apache-jmeter.md)

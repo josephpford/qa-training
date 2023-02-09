@@ -3,14 +3,14 @@
 MORNING
 
 Reading: 30 minutes
-  - [Introduction to Performance Testing](../../lessons/M15-introduction-to-performance-testing.md)
+  - [Introduction to Performance Testing](../../lessons/MQA-introduction-to-performance-testing.md)
 
 JMeter Installation: 30 minutes
-  - [Introduction to Apache JMeter](../../lessons/M15-introduction-to-apache-jmeter.md)
+  - [Introduction to Apache JMeter](../../lessons/MQA-introduction-to-apache-jmeter.md)
 
 BREAK
 
-Introduce [Performance Testing with Apache JMeter](../../exercises/M15-exercise-performance-testing.md)
+Introduce [Performance Testing with Apache JMeter](../../exercises/MQA-exercise-performance-testing.md)
 
 I Do / We Do "Create Performance Test Script": 30 minutes
 
@@ -28,9 +28,9 @@ BREAK
 ------------------------------------------------------------------------------------------
 
 ### Lessons
-- [Introduction to Performance Testing](../../lessons/M15-introduction-to-performance-testing.md)
-- [Performance Testing Tools / Technologies](../../lessons/M15-performance-testing-tools.md)
-- [Introduction to Apache JMeter](../../lessons/M15-introduction-to-apache-jmeter.md)
+- [Introduction to Performance Testing](../../lessons/MQA-introduction-to-performance-testing.md)
+- [Performance Testing Tools / Technologies](../../lessons/MQA-performance-testing-tools.md)
+- [Introduction to Apache JMeter](../../lessons/MQA-introduction-to-apache-jmeter.md)
 
 ### Exercises
-- [Performance Testing with Apache JMeter](../../exercises/M15-exercise-performance-testing.md)
+- [Performance Testing with Apache JMeter](../../exercises/MQA-exercise-performance-testing.md)

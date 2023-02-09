@@ -43,4 +43,4 @@ Performance Engineers create software or scripts which emulate tens/hundreds/tho
 There are many different roles in Quality Engineering. Some roles are more technical than others and require programming or scripting skills. Quality Assurance Analysts (or Testers) generally perform manual testing to look for defects. Automation engineers create automation scripts which automate test case execution. Performance Engineers focus on various aspects of system performance to ensure the system works under various loads and scenarios.
 
 ## Next:
-[Quality Engineering Summary](./M15-qe-overview-summary.md)
+[Quality Engineering Summary](./MQA-qe-overview-summary.md)
