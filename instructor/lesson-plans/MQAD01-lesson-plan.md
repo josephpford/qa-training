@@ -20,7 +20,7 @@ Reading: 30 minutes
     - [Careers in Quality Engineering](../../lessons/M15-careers-in-quality-engineering.md)
   - [Quality Engineering Summary](../../lessons/M15-qe-overview-summary.md)
 
-Finish Introduction Exercises in pairs/groups (15 minutes)
+Work on Introduction Exercises in pairs/groups (15 minutes)
 - [Introduction Exercises](../../exercises/M15-exercise-introduction-to-quality-engineering.md)
 
 Review Introduction Exercises as a Big Group (15 minutes)
