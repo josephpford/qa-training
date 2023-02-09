@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Quality Engineering is a vast domain, and there are numerous careers in Quality Engineering. In this lesson we explore some of the more common roles you may perform as a Quality Engineering professional.
+Quality Engineering is a vast domain, and there are numerous roles available. In this lesson we explore some of the more common roles you may perform as a Quality Engineering professional.
 
 ## Learning Outcomes
 
@@ -10,17 +10,9 @@ When you've finished this lesson you should be able to
 * Articulate how a Quality Engineer fits into a typical software development team
 * Understand three technical career paths in Quality Engineering
 
-## Consistently Ranks as #1 or #2 “Happiest Job”
-
-Read the following articles to see how a career in QA may be right for you.
-
-[5 Reasons Why QA Engineering is one of the Happiest Fields to Work In](https://www.careerist.com/insights/5-reasons-why-qa-engineering-is-one-of-the-happiest-fields-to-work-in)
-
-[The CareerBliss Happiest and Unhappiest Jobs of 2018](https://www.careerbliss.com/blog/the-careerbliss-happiest-and-unhappiest-jobs-of-2018)
-
 ## Quality Careers / Titles
 
-While this list is definitely not exhaustive, below are some of the more common roles in the industry.
+While this list is not exhaustive, below are some of the more common roles in the industry.
 
 ### Quality Assurance Analyst / Tester
 
@@ -34,7 +26,7 @@ Automation Engineers create software or scripts which automates functional test 
 
 Automation Engineers use many tools to write the automation. There are many commercial and open source tools available. You'll learn more about the various test tools later in this module.
 
-### Performance Testing Engineer
+### Performance Engineer
 
 Performance Engineers create software or scripts which emulate tens/hundreds/thousands/etc. of user or system interactions per second. Generally a small subset of the functional test cases are identified as good candidates for scripting. Then the performance engineer will write the code necessary to simulate a user performing that test case, and most likely parameterize the data inputs to vary the mock user behavior. The performance test scripts will be executed in various ways to test the system for stability or acceptable performance across various user loads. Again, there are many commercial and open source tools available. 
 

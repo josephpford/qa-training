@@ -8,7 +8,7 @@ A:
 Q: In your own words, what is Testing?  
 A: 
 
-Q: In your own words, what is a Defect?  What are the components of a Defect Report?  
+Q: In your own words, what is a Defect?
 A: 
 
 Q: How does Quality Assurance differ from Quality Management?  
@@ -18,12 +18,6 @@ Q: In your own words, what is Quality Engineering?
 A: 
 
 Q: On a typical software project, who is responsible for ensuring quality?  
-A: 
-
-Q: What are some examples of functional requirements?  
-A: 
-
-Q: What are some examples of non-functional requirements?  
 A: 
 
 Q: Why is automation so important on an Agile project?  
