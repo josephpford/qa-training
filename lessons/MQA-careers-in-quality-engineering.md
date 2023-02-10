@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Quality Engineering is a vast domain, and there are numerous careers in Quality Engineering. In this lesson we explore some of the more common roles you may perform as a Quality Engineering professional.
+Quality Engineering is a vast domain, and there are numerous roles available. In this lesson we explore some of the more common roles you may perform as a Quality Engineering professional.
 
 ## Learning Outcomes
 
@@ -10,21 +10,13 @@ When you've finished this lesson you should be able to
 * Articulate how a Quality Engineer fits into a typical software development team
 * Understand three technical career paths in Quality Engineering
 
-## Consistently Ranks as #1 or #2 “Happiest Job”
-
-Read the following articles to see how a career in QA may be right for you.
-
-[5 Reasons Why QA Engineering is one of the Happiest Fields to Work In](https://www.careerist.com/insights/5-reasons-why-qa-engineering-is-one-of-the-happiest-fields-to-work-in)
-
-[The CareerBliss Happiest and Unhappiest Jobs of 2018](https://www.careerbliss.com/blog/the-careerbliss-happiest-and-unhappiest-jobs-of-2018)
-
 ## Quality Careers / Titles
 
-While this list is definitely not exhaustive, below are some of the more common roles in the industry.
+While this list is not exhaustive, below are some of the more common roles in the industry.
 
 ### Quality Assurance Analyst / Tester
 
-People in these positions spend their time creating and (manually) executing [Test Plans](https://en.wikipedia.org/wiki/Test_plan) and [Test Cases](https://en.wikipedia.org/wiki/Test_case). Test Plans are high-level documents which spell out the types of testing that will take place. Test Cases are step-by-step instructions of what to do once testing starts.  Test Plans and Test Cases can be mapped back to requirements with [requirements traceability matrices](https://www.softwaretestinghelp.com/requirements-traceability-matrix/).
+People in these positions spend their time creating and (manually) executing [Test Plans](https://en.wikipedia.org/wiki/Test_plan) and [Test Cases](https://en.wikipedia.org/wiki/Test_case). Test Plans are high-level documents which spell out the types of testing that will take place. Test Cases are step-by-step instructions of what to do once testing starts. Test Plans and Test Cases can be mapped back to requirements with [requirements traceability matrices](https://www.softwaretestinghelp.com/requirements-traceability-matrix/).
 
 The step-by-step instructions are important not just to ensure that the execution is done correctly, but after a [Test Run](https://www.testmonitor.com/blog/test-case-test-suite-test-run-whats-the-difference) is executed, it can become an important piece of compliance for [SOX](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act) or [FDA](https://www.fda.gov/files/medical%20devices/published/General-Principles-of-Software-Validation---Final-Guidance-for-Industry-and-FDA-Staff.pdf) regulated environments. Quality Assurance Analysts create defect reports, and may hold Defect Triage meetings to prioritize defects and [determine root case](https://en.wikipedia.org/wiki/Root_cause_analysis).
 
@@ -34,7 +26,7 @@ Automation Engineers create software or scripts which automates functional test 
 
 Automation Engineers use many tools to write the automation. There are many commercial and open source tools available. You'll learn more about the various test tools later in this module.
 
-### Performance Testing Engineer
+### Performance Engineer
 
 Performance Engineers create software or scripts which emulate tens/hundreds/thousands/etc. of user or system interactions per second. Generally a small subset of the functional test cases are identified as good candidates for scripting. Then the performance engineer will write the code necessary to simulate a user performing that test case, and most likely parameterize the data inputs to vary the mock user behavior. The performance test scripts will be executed in various ways to test the system for stability or acceptable performance across various user loads. Again, there are many commercial and open source tools available. 
 
@@ -43,4 +35,4 @@ Performance Engineers create software or scripts which emulate tens/hundreds/tho
 There are many different roles in Quality Engineering. Some roles are more technical than others and require programming or scripting skills. Quality Assurance Analysts (or Testers) generally perform manual testing to look for defects. Automation engineers create automation scripts which automate test case execution. Performance Engineers focus on various aspects of system performance to ensure the system works under various loads and scenarios.
 
 ## Next:
-[Quality Engineering Summary](./M15-qe-overview-summary.md)
+[Quality Engineering Summary](./MQA-qe-overview-summary.md)

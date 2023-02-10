@@ -9,4 +9,4 @@ There are 2 major Software Development Methodologies, Waterfall and Agile. Autom
 There are many careers in Quality Engineering, including technical and managerial tracks. The focus on quality is only increasing, and Quality Engineering concepts are important for everyone on the team to understand.
 
 ## Next:
-[Introduction Exercises](../exercises/M15-exercise-introduction-to-quality-engineering.md)
+[Introduction Exercises](../exercises/MQA-exercise-introduction-to-quality-engineering.md)

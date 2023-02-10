@@ -19,9 +19,9 @@ Ariane flight V88 Launch Failure
 ## Cost of Defects
 
 There are lots of studies and articles that show defects found early in the software development lifecycle cost less than defects found later in the software development lifecycle.
-- [Defect Prevention: Reducing Costs and Enhancing Quality](https://www.isixsigma.com/tools-templates/software/defect-prevention-reducing-costs-and-enhancing-quality/)
+- [Defect Prevention: Reducing Costs and Enhancing Quality](https://www.isixsigma.com/software/defect-prevention-reducing-costs-and-enhancing-quality/)
 
 ![Relative Costs to Fix Software Defects](../assets/defect_costs.png)
 
 ## Next:
-[QA vs QM vs QE](./M15-qa-qm-qe.md)
+[QA vs QM vs QE](./MQA-qa-qm-qe.md)

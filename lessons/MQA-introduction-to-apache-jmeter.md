@@ -2,7 +2,7 @@
 
 ## About
 
-Apache JMeter is a load testing tool. It has a Graphical User Interface (GUI) and can also run in a 'headless` or non-GUI mode (CLI mode). Apache JMeter was originally designed for Web Applications, but now supports many different services/protocols. It can run on a single machine or a single JMeter client can be configured to control multiple, remote JMeter engines. JMeter is 100% open-source and 100% pure Java.  
+Apache JMeter is a load testing tool. It has a Graphical User Interface (GUI) and can also run in a 'headless` or non-GUI mode (CLI mode). Apache JMeter was originally designed for Web Applications, but now supports many different services/protocols. It can run on a single machine or a single JMeter client can be configured to control multiple, remote JMeter engines. JMeter is 100% open-source and 100% pure Java. 
 
 ## JMeter Test Components
 
@@ -58,4 +58,4 @@ Mac/Linux:
 ```
 
 ## Next
-[Exercise - Performance Test Field Agent API](../exercises/M15-exercise-performance-testing.md)
+[Exercise - Performance Test Field Agent API](../exercises/MQA-exercise-performance-testing.md)

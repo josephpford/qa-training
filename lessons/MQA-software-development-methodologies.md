@@ -21,7 +21,7 @@ Teams don't just sit down and start writing software. They follow a process whic
   - In this phase the software is deployed to the end-users. 
   - Usually the "operations" team handles deploying the product and supporting the system once it is in "production"
 
-Depending on the size of the project, this entire cycle can take from a couple of months to multiple years. Once the application is deployed to production, the cycle starts over again for the next version of the software. "Usually" deployments/upgrades happen between once and a handful of times a year.
+Depending on the size of the project, this entire cycle can take from a couple of months to multiple years. Once the application is deployed to production, the cycle starts over again for the next version of the software. "Usually" deployments/upgrades happen between once and a handful of times a year. 
 
 ### Agile
 
@@ -38,9 +38,9 @@ If you want to learn more, there are tons of great articles about Agile. Here ar
 
 ### Waterfall vs. Agile: "Throw it over the fence” vs. “Continuous Quality”
 
-Testing a product that is developed using the Agile methodology has similarities and differences between testing in a Waterfall environment. You still create test cases based on the requirements, but the requirements are usually less well documented and can involve a lot of conversations back-and-forth between the product owners and the testers. Many teams believe a product feature is not complete until there are automated tests written to prove the new feature works as expected. Because of the shorter time frames between development complete and deployment to production, automated testing is an absolute necessity. The amount of repeated regression testing that occurs over the course of a year is substantially higher than in a Waterfall project.
+Testing a product that is developed using the Agile methodology has similarities and differences between testing in a Waterfall environment. You still create test cases based on the requirements, but the requirements are usually less well documented and can involve a lot of conversations back-and-forth between the product owners and the testers. Many teams will not consider a product feature complete until there are automated tests written to prove the new feature works as expected. Because of the shorter time frames between development complete and deployment to production, automated testing is an absolute necessity. The amount of repeated regression testing that occurs on an Agile project over the course of a year is substantially higher than in a Waterfall project.
 
 Because a lot of projects are moving towards a more Agile development methodology, and because automated testing is so important for the success of an Agile project, companies are starting to blend the roles of QA and Development. This is the primary focus of QE.
 
 ## Next:
-[Test Strategies and Levels](./M15-test-strategies-and-levels.md)
+[Test Strategies and Levels](./MQA-test-strategies-and-levels.md)

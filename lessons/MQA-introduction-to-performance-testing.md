@@ -23,7 +23,7 @@ When you've finished this module you should have a high-level understanding of t
 The goals of performance testing very from project to project. It is important to first document the performance testing goals by working with Operations, Engineering Management and the Product Owner and then documenting a Performance Test Plan. Some example goals:
   - Execute load testing to demonstrate the system can handle 200 concurrent users
   - Execute stress testing to determine at what point the system needs to be scaled out
-  - Execute spike testing to ensure the system can handle a large spike in traffic when the "sale goes live".  
+  - Execute spike testing to ensure the system can handle a large spike in traffic when the "sale goes live". 
 
 As part of developing the test plan, you will identify which performance test types will be included. Again, these are just different terms used in Performance Testing, and they are not difficult concepts to understand, and they just help us in communicating with one another.
   - Load Testing
@@ -78,4 +78,4 @@ Gather all the metrics and test results.
 ![Response Time Graph](../assets/response_time_graph.png)
 
 ## Next
-[Performance Testing Tools / Technologies](./M15-performance-testing-tools.md)
+[Performance Testing Tools / Technologies](./MQA-performance-testing-tools.md)

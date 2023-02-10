@@ -29,4 +29,4 @@ When you've finished this exercise you should be able to write basic browser-bas
   - WebDriver is an executable that allows your Java code to open Chrome or Firefox and automate browser activity. Normally you have to download an exact version of WebDriver for your exact version of Chrome or Firefox. And you need to tell your Java code where to find your executable. WebDriverManager is an open-source Java library that carries out the management (i.e., download, setup, and maintenance) of the drivers required by WebDriver. We will be installing Selenium WebDriver using WebDriverManager, and we will be installing WebDriverManager using Maven. Nothing to do for now...
 
 Next
-[Part 2](./M15-exercise-automated-testing-part2.md)
+[Part 2](./MQA-exercise-automated-testing-part2.md)

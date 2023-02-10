@@ -37,7 +37,7 @@ Selenium has fantastic documentation and both free and commercial help available
   - [Community Support](https://www.selenium.dev/support/)
       - [Forums](https://groups.google.com/g/selenium-users?pli=1)
       - [IRC Chat](https://kiwiirc.com/nextclient/irc.libera.chat/#selenium)
-      - [Slack Channel](https://join.slack.com/t/seleniumhq/shared_invite/zt-vv33sc0w-VKKQop3WDV_lfrLXGGHvDw)
+      - [Slack Channel](https://join.slack.com/t/seleniumhq/shared_invite/zt-1neaoa52v-FTzht5cd2eYKwSobbhQkEw)
   - [Commercial Support](https://www.selenium.dev/sponsors/)
   - [JavaDoc](https://www.selenium.dev/selenium/docs/api/java/overview-summary.html)
 
@@ -52,4 +52,4 @@ Please take time to read the following:
 Selenium is an open source project with many downloadable components that can help automate web browsers. You can choose which components are necessary for your project. Selenium integrates nicely with Java and many other programming languages.
 
 ## Next
-[Automated Testing with Selenium](../exercises/M15-exercise-automated-testing-part1.md)
+[Automated Testing with Selenium](../exercises/MQA-exercise-automated-testing-part1.md)

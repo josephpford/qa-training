@@ -24,4 +24,4 @@ When you've finished this lesson, you should be able to:
 * Understand different test levels (System Testing, Integration Testing, etc.)
 
 ## Next:
-[Introduction to Defects](./M15-introduction-to-defects.md)
+[Introduction to Defects](./MQA-introduction-to-defects.md)
