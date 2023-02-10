@@ -1,7 +1,7 @@
 # Quality Engineering Training
 
 ## Goal
-Provide an awareness of Quality Engineer in Test practices, tools, and concepts and apply some of the learnings by testing a sample application.
+Provide an awareness of Quality Engineering practices, tools, and concepts and apply some of the learnings by testing a sample application.
 
 ## Assessment
 
