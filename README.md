@@ -24,17 +24,21 @@ Provide an awareness of Quality Engineering practices, tools, and concepts and a
 
 ### Quality Engineering Overview
 - [Introduction to Quality Engineering](./lessons/MQA-introduction-to-quality-engineering.md)
-  - [Introduction to Defects](./lessons/MQA-introduction-to-defects.md)
-  - [QA vs QM vs QE](./lessons/MQA-qa-qm-qe.md)
-  - [Software Development Methodologies](./lessons/MQA-software-development-methodologies.md)
-  - [Test Strategies and Levels](./lessons/MQA-test-strategies-and-levels.md)
-  - [Careers in Quality Engineering](./lessons/MQA-careers-in-quality-engineering.md)
+- [Introduction to Defects](./lessons/MQA-introduction-to-defects.md)
+- [QA vs QM vs QE](./lessons/MQA-qa-qm-qe.md)
+- [Software Development Methodologies](./lessons/MQA-software-development-methodologies.md)
+- [Test Strategies and Levels](./lessons/MQA-test-strategies-and-levels.md)
+- [Careers in Quality Engineering](./lessons/MQA-careers-in-quality-engineering.md)
 - [Quality Engineering Summary](./lessons/MQA-qe-overview-summary.md)
+
+Exercises
 - [Introduction Exercises](./exercises/MQA-exercise-introduction-to-quality-engineering.md)
 
 ### Manual Testing and Defects
 - [Manual Test Cases](./lessons/MQA-manual-testing.md)
-- [Defects Part 2](./lessons/MQA-defects-part-2.md)
+- [Defects Reports](./lessons/MQA-defect-reports.md)
+
+Exercises
 - [Manual Testing and Defect Exercise](./exercises/MQA-exercise-manual-testing.md)
 
 ## Day 2 - Functional Test Automation

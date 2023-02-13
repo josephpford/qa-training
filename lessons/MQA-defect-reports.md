@@ -1,4 +1,4 @@
-# Lesson: Defects Part 2
+# Defect Reports
 
 ## Introduction
 

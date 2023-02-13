@@ -1,4 +1,4 @@
-# Lesson: Introduction to Quality Engineering
+# Introduction to Quality Engineering
 
 ## Goals of the Quality Engineering Module
 
@@ -9,7 +9,7 @@ Quality Engineering is an evolving, vast domain. In this module we will explore 
 
 Over the next 3 days we will explore these quality topics by testing a 100% complete Field Agent. We will start with Manual Testing, then move to Automated Testing, and wrap up with Performance Testing. Each day will begin with a small amount of lecture, some reading, and then hands-on exercises.
 
-## Lesson 1: Introduction to Quality Engineering
+## Overview
 
 In this lesson, we will introduce many high level concepts used within the Quality and Software Engineering industries. First we will talk about defects, understand what they are, how much they cost and how we discover them. Then we will discuss 3 related but different terms in the industry "Quality Assurance", "Quality Management" and "Quality Engineering". 
 
